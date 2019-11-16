@@ -1,0 +1,53 @@
+object frm_main: Tfrm_main
+  Left = 8376
+  Height = 878
+  Top = 1238
+  Width = 2467
+  Caption = 'Syncrhony command center'
+  ClientHeight = 878
+  ClientWidth = 2467
+  DesignTimePPI = 240
+  LCLVersion = '2.0.6.0'
+  object frm_new: TBitBtn
+    Left = 104
+    Height = 296
+    Top = 280
+    Width = 536
+    Caption = 'Inregistrare noua'
+    Font.Height = -53
+    OnClick = frm_newClick
+    ParentFont = False
+    TabOrder = 0
+  end
+  object frm_sync: TBitBtn
+    Left = 658
+    Height = 296
+    Top = 280
+    Width = 536
+    Caption = 'Sincronizare date'
+    Font.Height = -53
+    ParentFont = False
+    TabOrder = 1
+  end
+  object frm_config: TBitBtn
+    Left = 1212
+    Height = 296
+    Top = 280
+    Width = 536
+    Caption = 'Configurare'
+    Font.Height = -53
+    ParentFont = False
+    TabOrder = 2
+  end
+  object frm_exit: TBitBtn
+    Left = 1768
+    Height = 296
+    Top = 280
+    Width = 536
+    Caption = 'Iesire'
+    Font.Height = -53
+    OnClick = frm_exitClick
+    ParentFont = False
+    TabOrder = 3
+  end
+end
