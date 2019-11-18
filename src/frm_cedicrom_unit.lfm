@@ -1,20 +1,19 @@
 object frm_cedricrom: Tfrm_cedricrom
-  Left = 7771
-  Height = 2515
-  Top = 760
-  Width = 4790
+  Left = 1912
+  Height = 1017
+  Top = -8
+  Width = 1920
   BorderStyle = bsDialog
   Caption = 'frm_cedricrom'
-  ClientHeight = 2515
-  ClientWidth = 4790
+  ClientHeight = 1017
+  ClientWidth = 1920
   Color = clHighlightText
-  DesignTimePPI = 240
   Position = poScreenCenter
   LCLVersion = '2.0.6.0'
   object background: TImage
     Left = 0
     Height = 1080
-    Top = -40
+    Top = -16
     Width = 1920
     AutoSize = True
     Picture.Data = {
@@ -4840,14 +4839,14 @@ object frm_cedricrom: Tfrm_cedricrom
     }
   end
   object Title: TLabel
-    Left = 2400
-    Height = 98
-    Top = 140
-    Width = 2243
+    Left = 960
+    Height = 40
+    Top = 56
+    Width = 925
     Caption = 'Formular screening pentru cancer de col uterin - Proiect CEDICROM'
     Font.CharSet = ANSI_CHARSET
     Font.Color = clBlack
-    Font.Height = -73
+    Font.Height = -29
     Font.Name = 'Segoe UI Symbol'
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
@@ -4857,14 +4856,14 @@ object frm_cedricrom: Tfrm_cedricrom
     OnClick = TitleClick
   end
   object Title1: TLabel
-    Left = 640
-    Height = 98
-    Top = 320
-    Width = 381
+    Left = 256
+    Height = 40
+    Top = 128
+    Width = 157
     Caption = 'Sectiunea 1'
     Font.CharSet = ANSI_CHARSET
     Font.Color = clBlack
-    Font.Height = -73
+    Font.Height = -29
     Font.Name = 'Segoe UI Symbol'
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
@@ -4874,14 +4873,14 @@ object frm_cedricrom: Tfrm_cedricrom
     OnClick = TitleClick
   end
   object Label1: TLabel
-    Left = 1100
-    Height = 98
-    Top = 320
-    Width = 3048
+    Left = 440
+    Height = 40
+    Top = 128
+    Width = 1204
     Caption = '(se completeaza la nivelul cabinetului de medicina de familie sau la nivel centrului de recoltare)'
     Font.CharSet = ANSI_CHARSET
     Font.Color = clBlack
-    Font.Height = -73
+    Font.Height = -29
     Font.Name = 'Segoe UI'
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
@@ -4890,14 +4889,14 @@ object frm_cedricrom: Tfrm_cedricrom
     OnClick = Label1Click
   end
   object Title2: TLabel
-    Left = 120
-    Height = 91
-    Top = 488
-    Width = 454
+    Left = 48
+    Height = 37
+    Top = 195
+    Width = 187
     Caption = 'Serie formular:'
     Font.CharSet = ANSI_CHARSET
     Font.Color = clBlack
-    Font.Height = -68
+    Font.Height = -27
     Font.Name = 'Segoe UI Symbol'
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
@@ -4906,276 +4905,276 @@ object frm_cedricrom: Tfrm_cedricrom
     ParentFont = False
     OnClick = TitleClick
   end
-  object CNP: TEdit
-    Tag = 1
-    Left = 2798
-    Height = 99
-    Top = 600
-    Width = 112
+  object CNP1: TEdit
+    Tag = 101
+    Left = 1119
+    Height = 45
+    Top = 240
+    Width = 45
     CharCase = ecUppercase
     Font.CharSet = ANSI_CHARSET
     Font.Color = clBlack
-    Font.Height = -68
+    Font.Height = -27
     Font.Name = 'Segoe UI Symbol'
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
     Font.Style = [fsBold]
     MaxLength = 1
-    OnChange = CNPChange
+    OnChange = CNP1Change
     ParentFont = False
     ParentShowHint = False
     TabOrder = 0
   end
-  object CNP1: TEdit
-    Tag = 1
-    Left = 2918
-    Height = 99
-    Top = 600
-    Width = 112
+  object CNP2: TEdit
+    Tag = 101
+    Left = 1167
+    Height = 45
+    Top = 240
+    Width = 45
     CharCase = ecUppercase
     Font.CharSet = ANSI_CHARSET
     Font.Color = clBlack
-    Font.Height = -68
+    Font.Height = -27
     Font.Name = 'Segoe UI Symbol'
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
     Font.Style = [fsBold]
     MaxLength = 1
-    OnChange = CNPChange
+    OnChange = CNP1Change
     ParentFont = False
     ParentShowHint = False
     TabOrder = 1
   end
-  object CNP2: TEdit
-    Tag = 1
-    Left = 3158
-    Height = 99
-    Top = 600
-    Width = 112
+  object CNP4: TEdit
+    Tag = 101
+    Left = 1264
+    Height = 45
+    Top = 240
+    Width = 45
     CharCase = ecUppercase
     Font.CharSet = ANSI_CHARSET
     Font.Color = clBlack
-    Font.Height = -68
+    Font.Height = -27
     Font.Name = 'Segoe UI Symbol'
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
     Font.Style = [fsBold]
     MaxLength = 1
-    OnChange = CNPChange
+    OnChange = CNP1Change
     ParentFont = False
     ParentShowHint = False
     TabOrder = 3
   end
   object CNP3: TEdit
-    Tag = 1
-    Left = 3038
-    Height = 99
-    Top = 600
-    Width = 112
+    Tag = 101
+    Left = 1215
+    Height = 45
+    Top = 240
+    Width = 45
     AutoSelect = False
     CharCase = ecUppercase
     Font.CharSet = ANSI_CHARSET
     Font.Color = clBlack
-    Font.Height = -68
+    Font.Height = -27
     Font.Name = 'Segoe UI Symbol'
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
     Font.Style = [fsBold]
     MaxLength = 1
-    OnChange = CNPChange
+    OnChange = CNP1Change
     ParentFont = False
     ParentShowHint = False
     TabOrder = 2
   end
-  object CNP4: TEdit
-    Tag = 1
-    Left = 3398
-    Height = 99
-    Top = 600
-    Width = 112
+  object CNP6: TEdit
+    Tag = 101
+    Left = 1359
+    Height = 45
+    Top = 240
+    Width = 45
     CharCase = ecUppercase
     Font.CharSet = ANSI_CHARSET
     Font.Color = clBlack
-    Font.Height = -68
+    Font.Height = -27
     Font.Name = 'Segoe UI Symbol'
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
     Font.Style = [fsBold]
     MaxLength = 1
-    OnChange = CNPChange
+    OnChange = CNP1Change
     ParentFont = False
     ParentShowHint = False
     TabOrder = 5
   end
   object CNP5: TEdit
-    Tag = 1
-    Left = 3278
-    Height = 99
-    Top = 600
-    Width = 112
+    Tag = 101
+    Left = 1311
+    Height = 45
+    Top = 240
+    Width = 45
     CharCase = ecUppercase
     Font.CharSet = ANSI_CHARSET
     Font.Color = clBlack
-    Font.Height = -68
+    Font.Height = -27
     Font.Name = 'Segoe UI Symbol'
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
     Font.Style = [fsBold]
     MaxLength = 1
-    OnChange = CNPChange
+    OnChange = CNP1Change
     ParentFont = False
     ParentShowHint = False
     TabOrder = 4
   end
-  object CNP6: TEdit
-    Tag = 1
-    Left = 3518
-    Height = 99
-    Top = 600
-    Width = 112
+  object CNP7: TEdit
+    Tag = 101
+    Left = 1407
+    Height = 45
+    Top = 240
+    Width = 45
     CharCase = ecUppercase
     Font.CharSet = ANSI_CHARSET
     Font.Color = clBlack
-    Font.Height = -68
+    Font.Height = -27
     Font.Name = 'Segoe UI Symbol'
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
     Font.Style = [fsBold]
     MaxLength = 1
-    OnChange = CNPChange
+    OnChange = CNP1Change
     ParentFont = False
     ParentShowHint = False
     TabOrder = 6
   end
-  object CNP7: TEdit
-    Tag = 1
-    Left = 3638
-    Height = 99
-    Top = 600
-    Width = 112
+  object CNP8: TEdit
+    Tag = 101
+    Left = 1455
+    Height = 45
+    Top = 240
+    Width = 45
     CharCase = ecUppercase
     Font.CharSet = ANSI_CHARSET
     Font.Color = clBlack
-    Font.Height = -68
+    Font.Height = -27
     Font.Name = 'Segoe UI Symbol'
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
     Font.Style = [fsBold]
     MaxLength = 1
-    OnChange = CNPChange
+    OnChange = CNP1Change
     ParentFont = False
     ParentShowHint = False
     TabOrder = 7
   end
-  object CNP8: TEdit
-    Tag = 1
-    Left = 4238
-    Height = 99
-    Top = 600
-    Width = 112
+  object CNP13: TEdit
+    Tag = 101
+    Left = 1695
+    Height = 45
+    Top = 240
+    Width = 45
     CharCase = ecUppercase
     Font.CharSet = ANSI_CHARSET
     Font.Color = clBlack
-    Font.Height = -68
+    Font.Height = -27
     Font.Name = 'Segoe UI Symbol'
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
     Font.Style = [fsBold]
     MaxLength = 1
-    OnChange = CNPChange
+    OnChange = CNP1Change
     ParentFont = False
     ParentShowHint = False
     TabOrder = 12
   end
   object CNP9: TEdit
-    Tag = 1
-    Left = 3758
-    Height = 99
-    Top = 600
-    Width = 112
+    Tag = 101
+    Left = 1503
+    Height = 45
+    Top = 240
+    Width = 45
     CharCase = ecUppercase
     Font.CharSet = ANSI_CHARSET
     Font.Color = clBlack
-    Font.Height = -68
+    Font.Height = -27
     Font.Name = 'Segoe UI Symbol'
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
     Font.Style = [fsBold]
     MaxLength = 1
-    OnChange = CNPChange
+    OnChange = CNP1Change
     ParentFont = False
     ParentShowHint = False
     TabOrder = 8
   end
   object CNP10: TEdit
-    Tag = 1
-    Left = 3878
-    Height = 99
-    Top = 600
-    Width = 112
+    Tag = 101
+    Left = 1551
+    Height = 45
+    Top = 240
+    Width = 45
     CharCase = ecUppercase
     Font.CharSet = ANSI_CHARSET
     Font.Color = clBlack
-    Font.Height = -68
+    Font.Height = -27
     Font.Name = 'Segoe UI Symbol'
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
     Font.Style = [fsBold]
     MaxLength = 1
-    OnChange = CNPChange
+    OnChange = CNP1Change
     ParentFont = False
     ParentShowHint = False
     TabOrder = 9
   end
   object CNP11: TEdit
-    Tag = 1
-    Left = 3998
-    Height = 99
-    Top = 600
-    Width = 112
+    Tag = 101
+    Left = 1599
+    Height = 45
+    Top = 240
+    Width = 45
     CharCase = ecUppercase
     Font.CharSet = ANSI_CHARSET
     Font.Color = clBlack
-    Font.Height = -68
+    Font.Height = -27
     Font.Name = 'Segoe UI Symbol'
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
     Font.Style = [fsBold]
     MaxLength = 1
-    OnChange = CNPChange
+    OnChange = CNP1Change
     ParentFont = False
     ParentShowHint = False
     TabOrder = 10
   end
   object CNP12: TEdit
-    Tag = 1
-    Left = 4118
-    Height = 99
-    Top = 600
-    Width = 112
+    Tag = 101
+    Left = 1647
+    Height = 45
+    Top = 240
+    Width = 45
     CharCase = ecUppercase
     Font.CharSet = ANSI_CHARSET
     Font.Color = clBlack
-    Font.Height = -68
+    Font.Height = -27
     Font.Name = 'Segoe UI Symbol'
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
     Font.Style = [fsBold]
     MaxLength = 1
-    OnChange = CNPChange
+    OnChange = CNP1Change
     ParentFont = False
     ParentShowHint = False
     TabOrder = 11
   end
   object Title3: TLabel
-    Left = 2630
-    Height = 91
-    Top = 600
-    Width = 134
+    Left = 1052
+    Height = 37
+    Top = 240
+    Width = 55
     Caption = 'CNP'
     Font.CharSet = ANSI_CHARSET
     Font.Color = clBlack
-    Font.Height = -68
+    Font.Height = -27
     Font.Name = 'Segoe UI Symbol'
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
@@ -5185,14 +5184,14 @@ object frm_cedricrom: Tfrm_cedricrom
     OnClick = TitleClick
   end
   object Title4: TLabel
-    Left = 430
-    Height = 91
-    Top = 620
-    Width = 179
+    Left = 172
+    Height = 37
+    Top = 248
+    Width = 72
     Caption = 'Nume'
     Font.CharSet = ANSI_CHARSET
     Font.Color = clBlack
-    Font.Height = -68
+    Font.Height = -27
     Font.Name = 'Segoe UI Semilight'
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
@@ -5200,16 +5199,16 @@ object frm_cedricrom: Tfrm_cedricrom
     ParentFont = False
     OnClick = TitleClick
   end
-  object Edit1: TEdit
-    Tag = 1
-    Left = 630
-    Height = 85
-    Top = 615
-    Width = 1000
+  object nume: TEdit
+    Tag = 101
+    Left = 252
+    Height = 39
+    Top = 246
+    Width = 400
     Color = clBtnHighlight
     Font.CharSet = ANSI_CHARSET
     Font.Color = clBlack
-    Font.Height = -58
+    Font.Height = -23
     Font.Name = 'Segoe UI'
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
@@ -5217,14 +5216,14 @@ object frm_cedricrom: Tfrm_cedricrom
     TabOrder = 13
   end
   object Title5: TLabel
-    Left = 1690
-    Height = 91
-    Top = 615
-    Width = 261
+    Left = 676
+    Height = 37
+    Top = 246
+    Width = 105
     Caption = 'Prenume'
     Font.CharSet = ANSI_CHARSET
     Font.Color = clBlack
-    Font.Height = -68
+    Font.Height = -27
     Font.Name = 'Segoe UI Semilight'
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
@@ -5232,16 +5231,16 @@ object frm_cedricrom: Tfrm_cedricrom
     ParentFont = False
     OnClick = TitleClick
   end
-  object Edit2: TEdit
-    Tag = 2
-    Left = 1990
-    Height = 85
-    Top = 615
-    Width = 550
+  object prenume: TEdit
+    Tag = 101
+    Left = 796
+    Height = 39
+    Top = 246
+    Width = 220
     Color = clBtnHighlight
     Font.CharSet = ANSI_CHARSET
     Font.Color = clBlack
-    Font.Height = -58
+    Font.Height = -23
     Font.Name = 'Segoe UI'
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
@@ -5249,14 +5248,14 @@ object frm_cedricrom: Tfrm_cedricrom
     TabOrder = 14
   end
   object Title6: TLabel
-    Left = 420
-    Height = 91
-    Top = 760
-    Width = 383
+    Left = 168
+    Height = 37
+    Top = 304
+    Width = 154
     Caption = 'Adresa: judet'
     Font.CharSet = ANSI_CHARSET
     Font.Color = clBlack
-    Font.Height = -68
+    Font.Height = -27
     Font.Name = 'Segoe UI Semilight'
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
@@ -5264,16 +5263,16 @@ object frm_cedricrom: Tfrm_cedricrom
     ParentFont = False
     OnClick = TitleClick
   end
-  object Edit4: TEdit
-    Tag = 4
-    Left = 1990
-    Height = 85
-    Top = 755
-    Width = 550
+  object localitate: TEdit
+    Tag = 101
+    Left = 796
+    Height = 39
+    Top = 302
+    Width = 220
     Color = clBtnHighlight
     Font.CharSet = ANSI_CHARSET
     Font.Color = clBlack
-    Font.Height = -58
+    Font.Height = -23
     Font.Name = 'Segoe UI'
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
@@ -5281,14 +5280,14 @@ object frm_cedricrom: Tfrm_cedricrom
     TabOrder = 15
   end
   object Title7: TLabel
-    Left = 1690
-    Height = 91
-    Top = 760
-    Width = 261
+    Left = 676
+    Height = 37
+    Top = 304
+    Width = 105
     Caption = 'localitate'
     Font.CharSet = ANSI_CHARSET
     Font.Color = clBlack
-    Font.Height = -68
+    Font.Height = -27
     Font.Name = 'Segoe UI Semilight'
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
@@ -5297,14 +5296,14 @@ object frm_cedricrom: Tfrm_cedricrom
     OnClick = TitleClick
   end
   object Title8: TLabel
-    Left = 2630
-    Height = 91
-    Top = 760
-    Width = 330
+    Left = 1052
+    Height = 37
+    Top = 304
+    Width = 132
     Caption = 'strada si nr.'
     Font.CharSet = ANSI_CHARSET
     Font.Color = clBlack
-    Font.Height = -68
+    Font.Height = -27
     Font.Name = 'Segoe UI Semilight'
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
@@ -5313,14 +5312,14 @@ object frm_cedricrom: Tfrm_cedricrom
     OnClick = TitleClick
   end
   object Title9: TLabel
-    Left = 120
-    Height = 91
-    Top = 1005
-    Width = 86
+    Left = 48
+    Height = 37
+    Top = 402
+    Width = 35
     Caption = 'tel.'
     Font.CharSet = ANSI_CHARSET
     Font.Color = clBlack
-    Font.Height = -68
+    Font.Height = -27
     Font.Name = 'Segoe UI Semilight'
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
@@ -5328,32 +5327,32 @@ object frm_cedricrom: Tfrm_cedricrom
     ParentFont = False
     OnClick = TitleClick
   end
-  object Edit7: TEdit
-    Tag = 7
-    Left = 2760
-    Height = 85
-    Top = 1000
-    Width = 1590
+  object cabinet: TEdit
+    Tag = 101
+    Left = 1104
+    Height = 39
+    Top = 400
+    Width = 636
     Color = clBtnHighlight
     Font.CharSet = ANSI_CHARSET
     Font.Color = clBlack
-    Font.Height = -58
+    Font.Height = -23
     Font.Name = 'Segoe UI'
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
-    OnChange = Edit5Change
+    OnChange = stradaChange
     ParentFont = False
     TabOrder = 17
   end
   object Title10: TLabel
-    Left = 2240
-    Height = 91
-    Top = 1005
-    Width = 469
+    Left = 896
+    Height = 37
+    Top = 402
+    Width = 188
     Caption = 'Cabinet medical'
     Font.CharSet = ANSI_CHARSET
     Font.Color = clBlack
-    Font.Height = -68
+    Font.Height = -27
     Font.Name = 'Segoe UI Semilight'
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
@@ -5361,16 +5360,16 @@ object frm_cedricrom: Tfrm_cedricrom
     ParentFont = False
     OnClick = TitleClick
   end
-  object Edit8: TEdit
-    Tag = 6
-    Left = 1420
-    Height = 85
-    Top = 1000
-    Width = 640
+  object medic_familie: TEdit
+    Tag = 101
+    Left = 568
+    Height = 39
+    Top = 400
+    Width = 256
     Color = clBtnHighlight
     Font.CharSet = ANSI_CHARSET
     Font.Color = clBlack
-    Font.Height = -58
+    Font.Height = -23
     Font.Name = 'Segoe UI'
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
@@ -5378,14 +5377,14 @@ object frm_cedricrom: Tfrm_cedricrom
     TabOrder = 16
   end
   object Title11: TLabel
-    Left = 920
-    Height = 91
-    Top = 1005
-    Width = 480
+    Left = 368
+    Height = 37
+    Top = 402
+    Width = 192
     Caption = 'medic de familie'
     Font.CharSet = ANSI_CHARSET
     Font.Color = clBlack
-    Font.Height = -68
+    Font.Height = -27
     Font.Name = 'Segoe UI Semilight'
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
@@ -5393,91 +5392,96 @@ object frm_cedricrom: Tfrm_cedricrom
     ParentFont = False
     OnClick = TitleClick
   end
-  object CheckBox1: TCheckBox
-    Left = 3310
-    Height = 95
-    Top = 1180
-    Width = 221
+  object urban: TCheckBox
+    Tag = 101
+    Left = 1324
+    Height = 41
+    Top = 472
+    Width = 89
     Caption = 'urban'
     Font.CharSet = ANSI_CHARSET
     Font.Color = clBlack
-    Font.Height = -68
+    Font.Height = -27
     Font.Name = 'Segoe UI'
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
     ParentFont = False
     TabOrder = 18
   end
-  object CheckBox2: TCheckBox
-    Left = 3310
-    Height = 95
-    Top = 1318
-    Width = 183
+  object rural: TCheckBox
+    Tag = 101
+    Left = 1324
+    Height = 41
+    Top = 527
+    Width = 74
     Caption = 'rural'
     Font.CharSet = ANSI_CHARSET
     Font.Color = clBlack
-    Font.Height = -68
+    Font.Height = -27
     Font.Name = 'Segoe UI'
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
     ParentFont = False
     TabOrder = 19
   end
-  object CheckBox3: TCheckBox
-    Left = 4000
-    Height = 95
-    Top = 1318
-    Width = 204
+  object roma: TCheckBox
+    Tag = 101
+    Left = 1600
+    Height = 41
+    Top = 527
+    Width = 82
     Caption = 'roma'
     Font.CharSet = ANSI_CHARSET
     Font.Color = clBlack
-    Font.Height = -68
+    Font.Height = -27
     Font.Name = 'Segoe UI'
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
     ParentFont = False
     TabOrder = 20
   end
-  object CheckBox4: TCheckBox
-    Left = 3998
-    Height = 95
-    Top = 1180
-    Width = 372
+  object ucraineana: TCheckBox
+    Tag = 101
+    Left = 1599
+    Height = 41
+    Top = 472
+    Width = 149
     Caption = 'ucraineana'
     Font.CharSet = ANSI_CHARSET
     Font.Color = clBlack
-    Font.Height = -68
+    Font.Height = -27
     Font.Name = 'Segoe UI'
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
     ParentFont = False
     TabOrder = 21
   end
-  object CheckBox5: TCheckBox
-    Left = 4000
-    Height = 95
-    Top = 1455
-    Width = 155
+  object alta: TCheckBox
+    Tag = 101
+    Left = 1600
+    Height = 41
+    Top = 582
+    Width = 64
     Caption = 'alta'
     Font.CharSet = ANSI_CHARSET
     Font.Color = clBlack
-    Font.Height = -68
+    Font.Height = -27
     Font.Name = 'Segoe UI'
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
     ParentFont = False
     TabOrder = 22
   end
-  object Edit9: TEdit
-    Tag = 8
-    Left = 4200
-    Height = 85
-    Top = 1465
-    Width = 485
+  object etnie: TEdit
+    Tag = 101
+    Left = 1680
+    Height = 39
+    Top = 586
+    Width = 194
     Color = clBtnHighlight
     Font.CharSet = ANSI_CHARSET
     Font.Color = clBlack
-    Font.Height = -58
+    Font.Height = -23
     Font.Name = 'Segoe UI'
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
@@ -5485,14 +5489,14 @@ object frm_cedricrom: Tfrm_cedricrom
     TabOrder = 23
   end
   object Title12: TLabel
-    Left = 2990
-    Height = 91
-    Top = 1180
-    Width = 229
+    Left = 1196
+    Height = 37
+    Top = 472
+    Width = 96
     Caption = 'Mediul:'
     Font.CharSet = ANSI_CHARSET
     Font.Color = clBlack
-    Font.Height = -68
+    Font.Height = -27
     Font.Name = 'Segoe UI Symbol'
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
@@ -5502,14 +5506,14 @@ object frm_cedricrom: Tfrm_cedricrom
     OnClick = TitleClick
   end
   object Title13: TLabel
-    Left = 3720
-    Height = 91
-    Top = 1180
-    Width = 167
+    Left = 1488
+    Height = 37
+    Top = 472
+    Width = 71
     Caption = 'Etnia:'
     Font.CharSet = ANSI_CHARSET
     Font.Color = clBlack
-    Font.Height = -68
+    Font.Height = -27
     Font.Name = 'Segoe UI Symbol'
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
@@ -5519,14 +5523,14 @@ object frm_cedricrom: Tfrm_cedricrom
     OnClick = TitleClick
   end
   object Title14: TLabel
-    Left = 120
-    Height = 77
-    Top = 1200
-    Width = 1457
+    Left = 48
+    Height = 31
+    Top = 480
+    Width = 580
     Caption = 'Antecedente personale (bifati in casutele corespunzatoare)'
     Font.CharSet = ANSI_CHARSET
     Font.Color = clBlack
-    Font.Height = -58
+    Font.Height = -23
     Font.Name = 'Segoe UI Semilight'
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
@@ -5535,14 +5539,14 @@ object frm_cedricrom: Tfrm_cedricrom
     OnClick = TitleClick
   end
   object Title15: TLabel
-    Left = 120
-    Height = 81
-    Top = 1340
-    Width = 804
+    Left = 48
+    Height = 32
+    Top = 536
+    Width = 325
     Caption = 'Histerectomie subtotala pentru:'
     Font.CharSet = ANSI_CHARSET
     Font.Color = clBlack
-    Font.Height = -60
+    Font.Height = -24
     Font.Name = 'Segoe UI Semilight'
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
@@ -5550,30 +5554,32 @@ object frm_cedricrom: Tfrm_cedricrom
     ParentFont = False
     OnClick = TitleClick
   end
-  object CheckBox6: TCheckBox
-    Left = 1000
-    Height = 85
-    Top = 1340
-    Width = 520
+  object benigna: TCheckBox
+    Tag = 101
+    Left = 400
+    Height = 36
+    Top = 536
+    Width = 212
     Caption = 'afectiuna benigna'
     Font.CharSet = ANSI_CHARSET
     Font.Color = clBlack
-    Font.Height = -60
+    Font.Height = -24
     Font.Name = 'Segoe UI'
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
     ParentFont = False
     TabOrder = 24
   end
-  object CheckBox7: TCheckBox
-    Left = 1620
-    Height = 85
-    Top = 1340
-    Width = 518
+  object maligna: TCheckBox
+    Tag = 101
+    Left = 648
+    Height = 36
+    Top = 536
+    Width = 211
     Caption = 'afectiune maligna'
     Font.CharSet = ANSI_CHARSET
     Font.Color = clBlack
-    Font.Height = -60
+    Font.Height = -24
     Font.Name = 'Segoe UI'
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
@@ -5581,14 +5587,14 @@ object frm_cedricrom: Tfrm_cedricrom
     TabOrder = 25
   end
   object Title16: TLabel
-    Left = 120
-    Height = 91
-    Top = 1465
-    Width = 1874
+    Left = 48
+    Height = 37
+    Top = 586
+    Width = 775
     Caption = 'Sectiunea 2 (se completeaza la nivelul centrului de recoltare)'
     Font.CharSet = ANSI_CHARSET
     Font.Color = clBlack
-    Font.Height = -68
+    Font.Height = -27
     Font.Name = 'Segoe UI Symbol'
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
@@ -5598,14 +5604,14 @@ object frm_cedricrom: Tfrm_cedricrom
     OnClick = TitleClick
   end
   object Title17: TLabel
-    Left = 120
-    Height = 91
-    Top = 1620
-    Width = 470
+    Left = 48
+    Height = 37
+    Top = 648
+    Width = 188
     Caption = 'Centru recoltare'
     Font.CharSet = ANSI_CHARSET
     Font.Color = clBlack
-    Font.Height = -68
+    Font.Height = -27
     Font.Name = 'Segoe UI Semilight'
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
@@ -5613,16 +5619,16 @@ object frm_cedricrom: Tfrm_cedricrom
     ParentFont = False
     OnClick = TitleClick
   end
-  object Edit10: TEdit
-    Tag = 9
-    Left = 640
-    Height = 85
-    Top = 1615
-    Width = 990
+  object centru: TEdit
+    Tag = 101
+    Left = 256
+    Height = 39
+    Top = 648
+    Width = 396
     Color = clBtnHighlight
     Font.CharSet = ANSI_CHARSET
     Font.Color = clBlack
-    Font.Height = -58
+    Font.Height = -23
     Font.Name = 'Segoe UI'
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
@@ -5630,14 +5636,14 @@ object frm_cedricrom: Tfrm_cedricrom
     TabOrder = 26
   end
   object Title18: TLabel
-    Left = 120
-    Height = 91
-    Top = 1760
-    Width = 423
+    Left = 48
+    Height = 37
+    Top = 704
+    Width = 167
     Caption = 'Medic recoltor'
     Font.CharSet = ANSI_CHARSET
     Font.Color = clBlack
-    Font.Height = -68
+    Font.Height = -27
     Font.Name = 'Segoe UI Semilight'
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
@@ -5645,31 +5651,32 @@ object frm_cedricrom: Tfrm_cedricrom
     ParentFont = False
     OnClick = TitleClick
   end
-  object Edit11: TEdit
-    Tag = 10
-    Left = 640
-    Height = 85
-    Top = 1755
-    Width = 990
+  object medic: TEdit
+    Tag = 101
+    Left = 256
+    Height = 39
+    Top = 702
+    Width = 396
     Color = clBtnHighlight
     Font.CharSet = ANSI_CHARSET
     Font.Color = clBlack
-    Font.Height = -58
+    Font.Height = -23
     Font.Name = 'Segoe UI'
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
     ParentFont = False
     TabOrder = 27
   end
-  object DateTimePicker1: TDateTimePicker
-    Left = 2520
-    Height = 85
-    Top = 1615
-    Width = 345
+  object data_recoltare: TDateTimePicker
+    Tag = 101
+    Left = 1008
+    Height = 39
+    Top = 646
+    Width = 139
     CenturyFrom = 1941
     MaxDate = 2958465
     MinDate = 36526
-    Font.Height = -58
+    Font.Height = -23
     ParentFont = False
     TabOrder = 28
     TrailingSeparator = False
@@ -5686,14 +5693,14 @@ object frm_cedricrom: Tfrm_cedricrom
     MonthNames = 'Long'
   end
   object Title19: TLabel
-    Left = 2092
-    Height = 81
-    Top = 1620
-    Width = 355
+    Left = 837
+    Height = 32
+    Top = 648
+    Width = 144
     Caption = 'Data recoltarii'
     Font.CharSet = ANSI_CHARSET
     Font.Color = clBlack
-    Font.Height = -60
+    Font.Height = -24
     Font.Name = 'Segoe UI Semilight'
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
@@ -5702,14 +5709,14 @@ object frm_cedricrom: Tfrm_cedricrom
     OnClick = TitleClick
   end
   object Title20: TLabel
-    Left = 1840
-    Height = 81
-    Top = 1760
-    Width = 609
+    Left = 736
+    Height = 32
+    Top = 704
+    Width = 245
     Caption = 'Data ultimei menstruatii'
     Font.CharSet = ANSI_CHARSET
     Font.Color = clBlack
-    Font.Height = -60
+    Font.Height = -24
     Font.Name = 'Segoe UI Semilight'
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
@@ -5717,15 +5724,16 @@ object frm_cedricrom: Tfrm_cedricrom
     ParentFont = False
     OnClick = TitleClick
   end
-  object DateTimePicker2: TDateTimePicker
-    Left = 2520
-    Height = 85
-    Top = 1755
-    Width = 345
+  object data_menstruatie: TDateTimePicker
+    Tag = 101
+    Left = 1008
+    Height = 39
+    Top = 702
+    Width = 139
     CenturyFrom = 1941
     MaxDate = 2958465
     MinDate = 36526
-    Font.Height = -58
+    Font.Height = -23
     ParentFont = False
     TabOrder = 29
     TrailingSeparator = False
@@ -5742,14 +5750,14 @@ object frm_cedricrom: Tfrm_cedricrom
     MonthNames = 'Long'
   end
   object Title21: TLabel
-    Left = 120
-    Height = 91
-    Top = 1940
-    Width = 507
+    Left = 48
+    Height = 37
+    Top = 776
+    Width = 212
     Caption = 'Status hormonal:'
     Font.CharSet = ANSI_CHARSET
     Font.Color = clBlack
-    Font.Height = -68
+    Font.Height = -27
     Font.Name = 'Segoe UI Semilight'
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
@@ -5758,75 +5766,80 @@ object frm_cedricrom: Tfrm_cedricrom
     ParentFont = False
     OnClick = TitleClick
   end
-  object CheckBox8: TCheckBox
-    Left = 120
-    Height = 85
-    Top = 2070
-    Width = 206
+  object ciclu: TCheckBox
+    Tag = 101
+    Left = 48
+    Height = 36
+    Top = 828
+    Width = 83
     Caption = 'ciclica'
     Font.CharSet = ANSI_CHARSET
     Font.Color = clBlack
-    Font.Height = -60
+    Font.Height = -24
     Font.Name = 'Segoe UI'
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
     ParentFont = False
     TabOrder = 30
   end
-  object CheckBox9: TCheckBox
-    Left = 398
-    Height = 85
-    Top = 2070
-    Width = 231
+  object sarcina: TCheckBox
+    Tag = 101
+    Left = 159
+    Height = 36
+    Top = 828
+    Width = 93
     Caption = 'sarcina'
     Font.CharSet = ANSI_CHARSET
     Font.Color = clBlack
-    Font.Height = -60
+    Font.Height = -24
     Font.Name = 'Segoe UI'
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
     ParentFont = False
     TabOrder = 31
   end
-  object CheckBox10: TCheckBox
-    Left = 120
-    Height = 85
-    Top = 2170
-    Width = 356
+  object menopauza: TCheckBox
+    Tag = 101
+    Left = 48
+    Height = 36
+    Top = 868
+    Width = 145
     Caption = 'menopauza'
     Font.CharSet = ANSI_CHARSET
     Font.Color = clBlack
-    Font.Height = -60
+    Font.Height = -24
     Font.Name = 'Segoe UI'
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
     ParentFont = False
     TabOrder = 32
   end
-  object CheckBox11: TCheckBox
-    Left = 120
-    Height = 85
-    Top = 2270
-    Width = 455
+  object lauzie: TCheckBox
+    Tag = 101
+    Left = 48
+    Height = 36
+    Top = 908
+    Width = 185
     Caption = 'lauzie (12 sapt.)'
     Font.CharSet = ANSI_CHARSET
     Font.Color = clBlack
-    Font.Height = -60
+    Font.Height = -24
     Font.Name = 'Segoe UI'
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
     ParentFont = False
     TabOrder = 33
   end
-  object CheckBox12: TCheckBox
-    Left = 120
-    Height = 85
-    Top = 2370
-    Width = 269
-    Caption = 'Alaptare'
+  object alaptare: TCheckBox
+    Tag = 101
+    Left = 48
+    Height = 36
+    Top = 948
+    Width = 105
+    Caption = 'alaptare'
     Font.CharSet = ANSI_CHARSET
     Font.Color = clBlack
-    Font.Height = -60
+    Font.Height = -24
     Font.Name = 'Segoe UI'
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
@@ -5834,14 +5847,14 @@ object frm_cedricrom: Tfrm_cedricrom
     TabOrder = 34
   end
   object Title22: TLabel
-    Left = 3120
-    Height = 81
-    Top = 1940
-    Width = 1509
+    Left = 1248
+    Height = 32
+    Top = 776
+    Width = 645
     Caption = 'Status postterapeutic pentru alt cancer decat cel cervical:'
     Font.CharSet = ANSI_CHARSET
     Font.Color = clBlack
-    Font.Height = -60
+    Font.Height = -24
     Font.Name = 'Segoe UI Semilight'
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
@@ -5850,60 +5863,64 @@ object frm_cedricrom: Tfrm_cedricrom
     ParentFont = False
     OnClick = TitleClick
   end
-  object CheckBox13: TCheckBox
-    Left = 4120
-    Height = 85
-    Top = 2070
-    Width = 482
+  object radioterapie: TCheckBox
+    Tag = 101
+    Left = 1648
+    Height = 36
+    Top = 828
+    Width = 194
     Caption = 'postradioterapie'
     Font.CharSet = ANSI_CHARSET
     Font.Color = clBlack
-    Font.Height = -60
+    Font.Height = -24
     Font.Name = 'Segoe UI'
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
     ParentFont = False
     TabOrder = 35
   end
-  object CheckBox14: TCheckBox
-    Left = 4120
-    Height = 85
-    Top = 2170
-    Width = 524
+  object chimioterapie: TCheckBox
+    Tag = 101
+    Left = 1648
+    Height = 36
+    Top = 868
+    Width = 212
     Caption = 'postchimioterapie'
     Font.CharSet = ANSI_CHARSET
     Font.Color = clBlack
-    Font.Height = -60
+    Font.Height = -24
     Font.Name = 'Segoe UI'
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
     ParentFont = False
     TabOrder = 36
   end
-  object CheckBox15: TCheckBox
-    Left = 3220
-    Height = 85
-    Top = 2070
-    Width = 522
+  object DIU: TCheckBox
+    Tag = 101
+    Left = 1288
+    Height = 36
+    Top = 828
+    Width = 211
     Caption = 'purtatoare de DIU'
     Font.CharSet = ANSI_CHARSET
     Font.Color = clBlack
-    Font.Height = -60
+    Font.Height = -24
     Font.Name = 'Segoe UI'
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
     ParentFont = False
     TabOrder = 37
   end
-  object CheckBox16: TCheckBox
-    Left = 3220
-    Height = 85
-    Top = 2170
-    Width = 272
+  object leucoree: TCheckBox
+    Tag = 101
+    Left = 1288
+    Height = 36
+    Top = 868
+    Width = 112
     Caption = 'leucoree'
     Font.CharSet = ANSI_CHARSET
     Font.Color = clBlack
-    Font.Height = -60
+    Font.Height = -24
     Font.Name = 'Segoe UI'
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
@@ -5911,14 +5928,14 @@ object frm_cedricrom: Tfrm_cedricrom
     TabOrder = 38
   end
   object Title23: TLabel
-    Left = 1642
-    Height = 91
-    Top = 1940
-    Width = 300
+    Left = 657
+    Height = 37
+    Top = 776
+    Width = 127
     Caption = 'Sangerari:'
     Font.CharSet = ANSI_CHARSET
     Font.Color = clBlack
-    Font.Height = -68
+    Font.Height = -27
     Font.Name = 'Segoe UI Semilight'
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
@@ -5927,30 +5944,33 @@ object frm_cedricrom: Tfrm_cedricrom
     ParentFont = False
     OnClick = TitleClick
   end
-  object CheckBox17: TCheckBox
-    Left = 1640
-    Height = 85
-    Top = 2070
-    Width = 304
+  object contact: TCheckBox
+    Tag = 101
+    Left = 656
+    Height = 36
+    Top = 828
+    Width = 123
     Caption = 'la contact'
     Font.CharSet = ANSI_CHARSET
     Font.Color = clBlack
-    Font.Height = -60
+    Font.Height = -24
     Font.Name = 'Segoe UI'
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
+    OnChange = contactChange
     ParentFont = False
     TabOrder = 39
   end
-  object CheckBox18: TCheckBox
-    Left = 1640
-    Height = 85
-    Top = 2170
-    Width = 291
+  object spontan: TCheckBox
+    Tag = 101
+    Left = 657
+    Height = 36
+    Top = 868
+    Width = 119
     Caption = 'spontane'
     Font.CharSet = ANSI_CHARSET
     Font.Color = clBlack
-    Font.Height = -60
+    Font.Height = -24
     Font.Name = 'Segoe UI'
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
@@ -5958,14 +5978,14 @@ object frm_cedricrom: Tfrm_cedricrom
     TabOrder = 40
   end
   object Title24: TLabel
-    Left = 2120
-    Height = 91
-    Top = 1940
-    Width = 463
+    Left = 848
+    Height = 37
+    Top = 776
+    Width = 196
     Caption = 'In antecedente:'
     Font.CharSet = ANSI_CHARSET
     Font.Color = clBlack
-    Font.Height = -68
+    Font.Height = -27
     Font.Name = 'Segoe UI Semilight'
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
@@ -5974,46 +5994,48 @@ object frm_cedricrom: Tfrm_cedricrom
     ParentFont = False
     OnClick = TitleClick
   end
-  object CheckBox19: TCheckBox
-    Left = 2120
-    Height = 85
-    Top = 2070
-    Width = 605
+  object cauterizari: TCheckBox
+    Tag = 101
+    Left = 848
+    Height = 36
+    Top = 828
+    Width = 245
     Caption = 'cauterizari ale colului'
     Font.CharSet = ANSI_CHARSET
     Font.Color = clBlack
-    Font.Height = -60
+    Font.Height = -24
     Font.Name = 'Segoe UI'
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
     ParentFont = False
     TabOrder = 41
   end
-  object CheckBox20: TCheckBox
-    Left = 2120
-    Height = 85
-    Top = 2170
-    Width = 983
+  object biopsii: TCheckBox
+    Tag = 101
+    Left = 848
+    Height = 36
+    Top = 868
+    Width = 397
     Caption = 'biopsii de col (diagnostic/descriere)'
     Font.CharSet = ANSI_CHARSET
     Font.Color = clBlack
-    Font.Height = -60
+    Font.Height = -24
     Font.Name = 'Segoe UI'
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
     ParentFont = False
     TabOrder = 42
   end
-  object Edit12: TEdit
-    Tag = 11
-    Left = 2120
-    Height = 53
-    Top = 2290
-    Width = 998
+  object biopsie_descriere: TEdit
+    Tag = 101
+    Left = 848
+    Height = 25
+    Top = 916
+    Width = 399
     Color = clBtnHighlight
     Font.CharSet = ANSI_CHARSET
     Font.Color = clBlack
-    Font.Height = -33
+    Font.Height = -13
     Font.Name = 'Segoe UI'
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
@@ -6021,14 +6043,14 @@ object frm_cedricrom: Tfrm_cedricrom
     TabOrder = 43
   end
   object Title25: TLabel
-    Left = 840
-    Height = 91
-    Top = 1940
-    Width = 507
+    Left = 336
+    Height = 37
+    Top = 776
+    Width = 212
     Caption = 'Status hormonal:'
     Font.CharSet = ANSI_CHARSET
     Font.Color = clBlack
-    Font.Height = -68
+    Font.Height = -27
     Font.Name = 'Segoe UI Semilight'
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
@@ -6037,79 +6059,81 @@ object frm_cedricrom: Tfrm_cedricrom
     ParentFont = False
     OnClick = TitleClick
   end
-  object CheckBox21: TCheckBox
-    Left = 830
-    Height = 85
-    Top = 2070
-    Width = 493
+  object cu_leziuni: TCheckBox
+    Tag = 101
+    Left = 332
+    Height = 36
+    Top = 828
+    Width = 203
     Caption = 'cu leziuni vizibile'
     Font.CharSet = ANSI_CHARSET
     Font.Color = clBlack
-    Font.Height = -60
+    Font.Height = -24
     Font.Name = 'Segoe UI'
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
     ParentFont = False
     TabOrder = 44
   end
-  object CheckBox22: TCheckBox
-    Left = 830
-    Height = 85
-    Top = 2170
-    Width = 533
+  object fara_leziuni: TCheckBox
+    Tag = 101
+    Left = 332
+    Height = 36
+    Top = 868
+    Width = 218
     Caption = 'fara leziuni vizibile'
     Font.CharSet = ANSI_CHARSET
     Font.Color = clBlack
-    Font.Height = -60
+    Font.Height = -24
     Font.Name = 'Segoe UI'
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
     ParentFont = False
     TabOrder = 45
   end
-  object Edit6: TEdit
-    Tag = 6
-    Left = 240
-    Height = 85
-    Top = 1000
-    Width = 600
+  object tel: TEdit
+    Tag = 101
+    Left = 96
+    Height = 39
+    Top = 400
+    Width = 240
     Color = clBtnHighlight
     Font.CharSet = ANSI_CHARSET
     Font.Color = clBlack
-    Font.Height = -58
+    Font.Height = -23
     Font.Name = 'Segoe UI'
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
     ParentFont = False
     TabOrder = 46
   end
-  object Edit5: TEdit
-    Tag = 5
-    Left = 2990
-    Height = 85
-    Top = 755
-    Width = 1360
+  object strada: TEdit
+    Tag = 101
+    Left = 1196
+    Height = 39
+    Top = 302
+    Width = 544
     Color = clBtnHighlight
     Font.CharSet = ANSI_CHARSET
     Font.Color = clBlack
-    Font.Height = -58
+    Font.Height = -23
     Font.Name = 'Segoe UI'
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
-    OnChange = Edit5Change
+    OnChange = stradaChange
     ParentFont = False
     TabOrder = 47
   end
-  object Edit3: TEdit
-    Tag = 3
-    Left = 830
-    Height = 85
-    Top = 755
-    Width = 800
+  object judet: TEdit
+    Tag = 101
+    Left = 332
+    Height = 39
+    Top = 302
+    Width = 320
     Color = clBtnHighlight
     Font.CharSet = ANSI_CHARSET
     Font.Color = clBlack
-    Font.Height = -58
+    Font.Height = -23
     Font.Name = 'Segoe UI'
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
@@ -6117,14 +6141,14 @@ object frm_cedricrom: Tfrm_cedricrom
     TabOrder = 48
   end
   object Title26: TLabel
-    Left = 2140
-    Height = 91
-    Top = 1080
-    Width = 668
+    Left = 856
+    Height = 37
+    Top = 432
+    Width = 268
     Caption = '(nume, adresa, telefon)'
     Font.CharSet = ANSI_CHARSET
     Font.Color = clBlack
-    Font.Height = -68
+    Font.Height = -27
     Font.Name = 'Segoe UI Semilight'
     Font.Pitch = fpVariable
     Font.Quality = fqDraft

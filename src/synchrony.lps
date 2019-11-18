@@ -19,8 +19,7 @@
         <ComponentName Value="frm_main"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <IsVisibleTab Value="True"/>
-        <TopLine Value="22"/>
+        <TopLine Value="21"/>
         <CursorPos X="55" Y="39"/>
         <UsageCount Value="20"/>
         <Loaded Value="True"/>
@@ -32,7 +31,9 @@
         <ComponentName Value="frm_cedricrom"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="2"/>
+        <TopLine Value="32"/>
         <CursorPos X="33" Y="9"/>
         <UsageCount Value="20"/>
         <Loaded Value="True"/>
