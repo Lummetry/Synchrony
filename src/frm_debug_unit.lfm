@@ -1,0 +1,20 @@
+object frm_debug: Tfrm_debug
+  Left = 9229
+  Height = 1634
+  Top = 1170
+  Width = 2011
+  Caption = 'frm_debug'
+  ClientHeight = 1634
+  ClientWidth = 2011
+  DesignTimePPI = 240
+  Position = poDesktopCenter
+  LCLVersion = '2.0.6.0'
+  object log: TMemo
+    Left = 0
+    Height = 1634
+    Top = 0
+    Width = 2011
+    Align = alClient
+    TabOrder = 0
+  end
+end

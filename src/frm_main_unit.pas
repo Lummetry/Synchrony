@@ -32,7 +32,7 @@ implementation
 
 {$R *.lfm}
 
-uses frm_cedicrom_unit;
+uses frm_cedicrom_unit, sync_utils;
 
 { Tfrm_main }
 
@@ -41,8 +41,19 @@ begin
 end;
 
 procedure Tfrm_main.frm_newClick(Sender: TObject);
+var lst_out : TList;
+  i:integer;
+  fld : TCustomField;
 begin
   frm_cedricrom.showModal;
+  lst_out := extract_data(frm_cedricrom);
+  clear_log;
+  for i:=0 to lst_out.Count-1 do
+  begin
+    fld := TCustomField(lst_out.Items[i]);
+    add_log(fld.FieldName + ' = ' + fld.FieldValue);
+  end;
+  show_debug;
 end;
 
 procedure Tfrm_main.frm_exitClick(Sender: TObject);
