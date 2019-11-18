@@ -14,7 +14,9 @@ object frm_main: Tfrm_main
     Top = 280
     Width = 536
     Caption = 'Inregistrare noua'
+    Font.Height = -53
     OnClick = frm_newClick
+    ParentFont = False
     TabOrder = 0
   end
   object frm_sync: TBitBtn
@@ -23,6 +25,8 @@ object frm_main: Tfrm_main
     Top = 280
     Width = 536
     Caption = 'Sincronizare date'
+    Font.Height = -53
+    ParentFont = False
     TabOrder = 1
   end
   object frm_config: TBitBtn
@@ -31,6 +35,8 @@ object frm_main: Tfrm_main
     Top = 280
     Width = 536
     Caption = 'Configurare'
+    Font.Height = -53
+    ParentFont = False
     TabOrder = 2
   end
   object frm_exit: TBitBtn
@@ -39,7 +45,9 @@ object frm_main: Tfrm_main
     Top = 280
     Width = 536
     Caption = 'Iesire'
+    Font.Height = -53
     OnClick = frm_exitClick
+    ParentFont = False
     TabOrder = 3
   end
 end
