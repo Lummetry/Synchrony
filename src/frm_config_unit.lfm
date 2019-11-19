@@ -1,0 +1,41 @@
+object frm_config: Tfrm_config
+  Left = 9303
+  Height = 964
+  Top = 1441
+  Width = 889
+  Caption = 'Configurare'
+  ClientHeight = 964
+  ClientWidth = 889
+  DesignTimePPI = 240
+  Position = poScreenCenter
+  LCLVersion = '2.0.6.0'
+  object BitBtn1: TBitBtn
+    Left = 150
+    Height = 199
+    Top = 472
+    Width = 618
+    Caption = 'Afisare log'
+    OnClick = BitBtn1Click
+    TabOrder = 0
+  end
+  object BitBtn2: TBitBtn
+    Left = 150
+    Height = 199
+    Top = 704
+    Width = 618
+    DefaultCaption = True
+    Kind = bkClose
+    ModalResult = 11
+    TabOrder = 1
+  end
+  object BitBtn3: TBitBtn
+    Left = 150
+    Height = 199
+    Top = 232
+    Width = 618
+    Caption = 'Fortare salvare locala'
+    Default = True
+    OnClick = BitBtn3Click
+    TabOrder = 2
+  end
+end

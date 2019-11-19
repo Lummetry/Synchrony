@@ -12,13 +12,17 @@ type
   { Tfrm_main }
 
   Tfrm_main = class(TForm)
-    frm_new: TBitBtn;
-    frm_sync: TBitBtn;
-    frm_config: TBitBtn;
-    frm_exit: TBitBtn;
-    procedure frm_exitClick(Sender: TObject);
+    btn_new: TBitBtn;
+    btn_sync: TBitBtn;
+    btn_config: TBitBtn;
+    btn_exit: TBitBtn;
+    btn_db: TBitBtn;
+    procedure btn_configClick(Sender: TObject);
+    procedure btn_exitClick(Sender: TObject);
+    procedure btn_syncClick(Sender: TObject);
     procedure frm_formularClick(Sender: TObject);
-    procedure frm_newClick(Sender: TObject);
+    procedure btn_newClick(Sender: TObject);
+    procedure btn_dbClick(Sender: TObject);
   private
 
   public
@@ -32,7 +36,7 @@ implementation
 
 {$R *.lfm}
 
-uses frm_cedicrom_unit, sync_utils;
+uses frm_cedicrom_unit, sync_utils, frm_records_unit, db, frm_config_unit;
 
 { Tfrm_main }
 
@@ -40,25 +44,45 @@ procedure Tfrm_main.frm_formularClick(Sender: TObject);
 begin
 end;
 
-procedure Tfrm_main.frm_newClick(Sender: TObject);
-var lst_out : TList;
-  i:integer;
-  fld : TCustomField;
+procedure Tfrm_main.btn_newClick(Sender: TObject);
 begin
+  _clear_form(frm_cedricrom);
   frm_cedricrom.showModal;
-  lst_out := extract_data(frm_cedricrom);
-  clear_log;
-  for i:=0 to lst_out.Count-1 do
-  begin
-    fld := TCustomField(lst_out.Items[i]);
-    add_log(fld.FieldName + ' = ' + fld.FieldValue);
-  end;
-  show_debug;
+  extract_and_save(frm_cedricrom);
+  /// this is for debug only
+  log_show;
 end;
 
-procedure Tfrm_main.frm_exitClick(Sender: TObject);
+procedure Tfrm_main.btn_dbClick(Sender: TObject);
+var
+  dsrc : TDataSource;
+begin
+  if ds_data.Active then
+  begin
+    dsrc := TDataSource.Create(self);
+    dsrc.DataSet := ds_data;
+    frm_records.dbg.DataSource := dsrc;
+    frm_records.ShowModal;
+  end
+  else
+  begin
+    ShowMessage('Nu exista data disponibile momentan');
+  end;
+end;
+
+procedure Tfrm_main.btn_exitClick(Sender: TObject);
 begin
   Application.Terminate;
+end;
+
+procedure Tfrm_main.btn_syncClick(Sender: TObject);
+begin
+
+end;
+
+procedure Tfrm_main.btn_configClick(Sender: TObject);
+begin
+  frm_config.ShowModal;
 end;
 
 end.
