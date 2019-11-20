@@ -1,0 +1,42 @@
+object frm_records: Tfrm_records
+  Left = 8976
+  Height = 1491
+  Top = 1195
+  Width = 2310
+  Caption = 'frm_records'
+  ClientHeight = 1491
+  ClientWidth = 2310
+  DesignTimePPI = 240
+  LCLVersion = '2.0.6.0'
+  object Panel1: TPanel
+    Left = 0
+    Height = 111
+    Top = 1380
+    Width = 2310
+    Align = alBottom
+    BevelInner = bvLowered
+    ClientHeight = 111
+    ClientWidth = 2310
+    TabOrder = 0
+    object BitBtn1: TBitBtn
+      Left = 920
+      Height = 75
+      Top = 16
+      Width = 500
+      DefaultCaption = True
+      Kind = bkClose
+      ModalResult = 11
+      TabOrder = 0
+    end
+  end
+  object dbg: TDBGrid
+    Left = 0
+    Height = 1380
+    Top = 0
+    Width = 2310
+    Align = alClient
+    Color = clWindow
+    Columns = <>
+    TabOrder = 1
+  end
+end
