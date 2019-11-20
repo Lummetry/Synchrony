@@ -1,66 +1,65 @@
 object frm_main: Tfrm_main
-  Left = 8376
-  Height = 572
-  Top = 1238
-  Width = 2422
+  Left = 2354
+  Height = 229
+  Top = 335
+  Width = 969
   Caption = 'Syncrhony command center'
-  ClientHeight = 572
-  ClientWidth = 2422
-  DesignTimePPI = 240
+  ClientHeight = 229
+  ClientWidth = 969
   OnCreate = FormCreate
   Position = poScreenCenter
   LCLVersion = '2.0.6.0'
   object btn_new: TBitBtn
-    Left = 40
-    Height = 200
-    Top = 208
-    Width = 450
+    Left = 16
+    Height = 80
+    Top = 83
+    Width = 180
     Caption = 'Inregistrare noua'
-    Font.Height = -53
+    Font.Height = -21
     OnClick = btn_newClick
     ParentFont = False
     TabOrder = 0
   end
   object btn_sync: TBitBtn
-    Left = 984
-    Height = 200
-    Top = 208
-    Width = 450
+    Left = 394
+    Height = 80
+    Top = 83
+    Width = 180
     Caption = 'Sincronizare date'
-    Font.Height = -53
+    Font.Height = -21
     OnClick = btn_syncClick
     ParentFont = False
     TabOrder = 1
   end
   object btn_config: TBitBtn
-    Left = 1456
-    Height = 200
-    Top = 208
-    Width = 450
+    Left = 582
+    Height = 80
+    Top = 83
+    Width = 180
     Caption = 'Configurare'
-    Font.Height = -53
+    Font.Height = -21
     OnClick = btn_configClick
     ParentFont = False
     TabOrder = 2
   end
   object btn_exit: TBitBtn
-    Left = 1928
-    Height = 200
-    Top = 208
-    Width = 450
+    Left = 771
+    Height = 80
+    Top = 83
+    Width = 180
     Caption = 'Iesire'
-    Font.Height = -53
+    Font.Height = -21
     OnClick = btn_exitClick
     ParentFont = False
     TabOrder = 3
   end
   object btn_db: TBitBtn
-    Left = 512
-    Height = 200
-    Top = 208
-    Width = 450
+    Left = 205
+    Height = 80
+    Top = 83
+    Width = 180
     Caption = 'Inregistrari locale'
-    Font.Height = -53
+    Font.Height = -21
     OnClick = btn_dbClick
     ParentFont = False
     TabOrder = 4

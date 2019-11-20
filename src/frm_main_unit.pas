@@ -47,7 +47,7 @@ end;
 
 procedure Tfrm_main.btn_newClick(Sender: TObject);
 begin
-  new_registration(frm_cedricrom, True);
+  new_registration(frm_cedicrom, True);
 end;
 
 procedure Tfrm_main.btn_dbClick(Sender: TObject);
