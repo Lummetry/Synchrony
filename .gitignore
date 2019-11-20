@@ -1,0 +1,12 @@
+
+*.lps
+
+*.ppu
+
+*.o
+
+*.obj
+
+src/backup/
+
+src/lib/x86_64-win64/
