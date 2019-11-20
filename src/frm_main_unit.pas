@@ -20,6 +20,7 @@ type
     procedure btn_configClick(Sender: TObject);
     procedure btn_exitClick(Sender: TObject);
     procedure btn_syncClick(Sender: TObject);
+    procedure FormCreate(Sender: TObject);
     procedure frm_formularClick(Sender: TObject);
     procedure btn_newClick(Sender: TObject);
     procedure btn_dbClick(Sender: TObject);
@@ -76,6 +77,11 @@ begin
 end;
 
 procedure Tfrm_main.btn_syncClick(Sender: TObject);
+begin
+
+end;
+
+procedure Tfrm_main.FormCreate(Sender: TObject);
 begin
 
 end;

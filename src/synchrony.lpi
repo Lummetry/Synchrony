@@ -71,12 +71,14 @@
         <Filename Value="frm_records_unit.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="frm_records"/>
+        <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
       </Unit5>
       <Unit6>
         <Filename Value="frm_config_unit.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="frm_config"/>
+        <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
       </Unit6>
     </Units>
