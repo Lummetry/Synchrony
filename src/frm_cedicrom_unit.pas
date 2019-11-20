@@ -6,36 +6,27 @@ interface
 
 uses
   Classes, SysUtils, Forms, Controls, Graphics, Dialogs, StdCtrls, ExtCtrls,
-  ExtDlgs, Calendar, DateTimePicker;
+  ExtDlgs, Calendar, Buttons, DateTimePicker;
 
 type
 
-  { Tfrm_cedricrom }
+  { Tfrm_cedicrom }
 
-  Tfrm_cedricrom = class(TForm)
+  Tfrm_cedicrom = class(TForm)
     background: TImage;
-    urban: TCheckBox;
-    menopauza: TCheckBox;
-    lauzie: TCheckBox;
-    alaptare: TCheckBox;
-    radioterapie: TCheckBox;
-    chimioterapie: TCheckBox;
+    mediul: TRadioGroup;
+    mediul1: TRadioGroup;
+    mediul2: TRadioGroup;
+    RadioGroup1: TRadioGroup;
+    RadioGroup2: TRadioGroup;
+    RadioGroup3: TRadioGroup;
+    RadioGroup4: TRadioGroup;
+    RadioGroup5: TRadioGroup;
+    salvare_continuare: TBitBtn;
+    salvare: TBitBtn;
+    salvare_inchidere: TBitBtn;
     DIU: TCheckBox;
     leucoree: TCheckBox;
-    contact: TCheckBox;
-    spontan: TCheckBox;
-    cauterizari: TCheckBox;
-    rural: TCheckBox;
-    biopsii: TCheckBox;
-    cu_leziuni: TCheckBox;
-    fara_leziuni: TCheckBox;
-    roma: TCheckBox;
-    ucraineana: TCheckBox;
-    alta: TCheckBox;
-    benigna: TCheckBox;
-    maligna: TCheckBox;
-    ciclu: TCheckBox;
-    sarcina: TCheckBox;
     CNP1: TEdit;
     CNP2: TEdit;
     CNP10: TEdit;
@@ -68,21 +59,13 @@ type
     Title1: TLabel;
     Title10: TLabel;
     Title11: TLabel;
-    Title12: TLabel;
-    Title13: TLabel;
     Title14: TLabel;
-    Title15: TLabel;
     Title16: TLabel;
     Title17: TLabel;
     Title18: TLabel;
     Title19: TLabel;
     Title2: TLabel;
     Title20: TLabel;
-    Title21: TLabel;
-    Title22: TLabel;
-    Title23: TLabel;
-    Title24: TLabel;
-    Title25: TLabel;
     Title26: TLabel;
     Title3: TLabel;
     Title4: TLabel;
@@ -93,6 +76,8 @@ type
     Title9: TLabel;
     procedure contactChange(Sender: TObject);
     procedure CNP1Change(Sender: TObject);
+    procedure frm_cedicromSizeConstraintsChange(Sender: TObject);
+    procedure mediulClick(Sender: TObject);
     procedure stradaChange(Sender: TObject);
     procedure Label1Click(Sender: TObject);
     procedure TitleClick(Sender: TObject);
@@ -103,35 +88,45 @@ type
   end;
 
 var
-  frm_cedricrom: Tfrm_cedricrom;
+  frm_cedicrom: Tfrm_cedicrom;
 
 implementation
 
 {$R *.lfm}
 
-{ Tfrm_cedricrom }
+{ Tfrm_cedicrom }
 
-procedure Tfrm_cedricrom.TitleClick(Sender: TObject);
+procedure Tfrm_cedicrom.TitleClick(Sender: TObject);
 begin
 
 end;
 
-procedure Tfrm_cedricrom.Label1Click(Sender: TObject);
+procedure Tfrm_cedicrom.Label1Click(Sender: TObject);
 begin
 
 end;
 
-procedure Tfrm_cedricrom.CNP1Change(Sender: TObject);
+procedure Tfrm_cedicrom.CNP1Change(Sender: TObject);
 begin
 
 end;
 
-procedure Tfrm_cedricrom.contactChange(Sender: TObject);
+procedure Tfrm_cedicrom.frm_cedicromSizeConstraintsChange(Sender: TObject);
 begin
 
 end;
 
-procedure Tfrm_cedricrom.stradaChange(Sender: TObject);
+procedure Tfrm_cedicrom.mediulClick(Sender: TObject);
+begin
+
+end;
+
+procedure Tfrm_cedicrom.contactChange(Sender: TObject);
+begin
+
+end;
+
+procedure Tfrm_cedicrom.stradaChange(Sender: TObject);
 begin
 
 end;
