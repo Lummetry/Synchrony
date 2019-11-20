@@ -5,7 +5,8 @@ unit frm_main_unit;
 interface
 
 uses
-  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, StdCtrls, Buttons;
+  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, StdCtrls, Buttons,
+  ExtCtrls;
 
 type
 
@@ -16,6 +17,7 @@ type
     frm_sync: TBitBtn;
     frm_config: TBitBtn;
     frm_exit: TBitBtn;
+    Image1: TImage;
     procedure frm_exitClick(Sender: TObject);
     procedure frm_formularClick(Sender: TObject);
     procedure frm_newClick(Sender: TObject);
@@ -42,7 +44,7 @@ end;
 
 procedure Tfrm_main.frm_newClick(Sender: TObject);
 begin
-  frm_cedricrom.showModal;
+  frm_cedicrom.showModal;
 end;
 
 procedure Tfrm_main.frm_exitClick(Sender: TObject);

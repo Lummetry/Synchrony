@@ -16,6 +16,7 @@ begin
   RequireDerivedFormResource:=True;
   Application.Scaled:=True;
   Application.Initialize;
+  Application.CreateForm(Tfrm_main, frm_main);
   Application.CreateForm(Tfrm_cedricrom, frm_cedricrom);
   Application.Run;
 end.

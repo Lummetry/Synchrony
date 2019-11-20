@@ -17,7 +17,7 @@ begin
   Application.Scaled:=True;
   Application.Initialize;
   Application.CreateForm(Tfrm_main, frm_main);
-  Application.CreateForm(Tfrm_cedricrom, frm_cedricrom);
+  Application.CreateForm(Tfrm_cedicrom, frm_cedicrom);
   Application.Run;
 end.
 
