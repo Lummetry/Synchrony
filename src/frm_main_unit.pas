@@ -47,28 +47,13 @@ end;
 
 procedure Tfrm_main.btn_newClick(Sender: TObject);
 begin
-  _clear_form(frm_cedricrom);
-  frm_cedricrom.showModal;
-  extract_and_save(frm_cedricrom);
-  /// this is for debug only
-  log_show;
+  new_registration(frm_cedricrom, True);
 end;
 
 procedure Tfrm_main.btn_dbClick(Sender: TObject);
-var
-  dsrc : TDataSource;
+
 begin
-  if ds_data.Active then
-  begin
-    dsrc := TDataSource.Create(self);
-    dsrc.DataSet := ds_data;
-    frm_records.dbg.DataSource := dsrc;
-    frm_records.ShowModal;
-  end
-  else
-  begin
-    ShowMessage('Nu exista data disponibile momentan');
-  end;
+ show_data_log;
 end;
 
 procedure Tfrm_main.btn_exitClick(Sender: TObject);

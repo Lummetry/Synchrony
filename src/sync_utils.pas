@@ -6,7 +6,7 @@ interface
 
 uses
   Classes, SysUtils, Forms, Controls, Graphics, Dialogs, StdCtrls, ExtCtrls,
-  ExtDlgs, Calendar, DateTimePicker, frm_debug_unit, csvdataset, db;
+  ExtDlgs, Calendar, DateTimePicker, csvdataset, db;
 
 type
   TCustomField = class
@@ -32,10 +32,15 @@ procedure log_show;
 procedure log_add_all_data;
 procedure log_add_data;
 
+procedure show_data_log;
+
+procedure new_registration(frm_target: TForm; debug: Boolean);
+
 
 procedure _setup_controls(frm_target:TForm);
 
 procedure _clear_form(frm_target: TForm);
+
 
 
 
@@ -49,6 +54,8 @@ const
 
 
 implementation
+
+uses frm_records_unit, frm_debug_unit;
 
 procedure log_init;
 begin
@@ -311,6 +318,34 @@ end;
 procedure log_add_data;
 begin
  log_add(_data_to_list)
+end;
+
+procedure show_data_log;
+var
+  dsrc : TDataSource;
+begin
+  if ds_data.Active then
+  begin
+    dsrc := TDataSource.Create(nil);
+    dsrc.DataSet := ds_data;
+    frm_records.dbg.DataSource := dsrc;
+    frm_records.ShowModal;
+  end
+  else
+  begin
+    ShowMessage('Nu exista data disponibile momentan');
+  end;
+end;
+
+procedure new_registration(frm_target: TForm; debug: Boolean);
+begin
+  _clear_form(frm_target);
+  if frm_target.showModal = mrOK then
+    extract_and_save(frm_target);
+    if debug then
+       log_show
+  else
+    ShowMessage('Salvarea a fost anulata');
 end;
 
 
