@@ -1,12 +1,12 @@
 object frm_main: Tfrm_main
-  Left = 2438
-  Height = 446
-  Top = 258
-  Width = 659
+  Left = 634
+  Height = 444
+  Top = 247
+  Width = 664
   BorderStyle = bsNone
   Caption = 'Syncrhony command center'
-  ClientHeight = 446
-  ClientWidth = 659
+  ClientHeight = 444
+  ClientWidth = 664
   OnCreate = FormCreate
   Position = poScreenCenter
   LCLVersion = '2.0.6.0'
@@ -4553,19 +4553,23 @@ object frm_main: Tfrm_main
     Font.Height = -21
     OnClick = btn_configClick
     ParentFont = False
-    TabOrder = 2
+    TabOrder = 3
   end
   object btn_exit: TBitBtn
-    Left = 112
+    Left = 346
     Height = 80
     Top = 336
-    Width = 436
+    Width = 202
     Caption = 'Iesire'
+    Font.CharSet = ANSI_CHARSET
     Font.Color = 6763281
     Font.Height = -21
+    Font.Name = 'Segoe UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
     OnClick = btn_exitClick
     ParentFont = False
-    TabOrder = 3
+    TabOrder = 5
   end
   object btn_db: TBitBtn
     Left = 112
@@ -4576,6 +4580,22 @@ object frm_main: Tfrm_main
     Font.Color = 6763281
     Font.Height = -21
     OnClick = btn_dbClick
+    ParentFont = False
+    TabOrder = 2
+  end
+  object btn_about: TBitBtn
+    Left = 112
+    Height = 80
+    Top = 336
+    Width = 202
+    Caption = 'Despre'
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -21
+    Font.Name = 'Segoe UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    OnClick = btn_aboutClick
     ParentFont = False
     TabOrder = 4
   end

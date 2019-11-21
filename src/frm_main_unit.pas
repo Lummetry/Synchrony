@@ -13,12 +13,14 @@ type
   { Tfrm_main }
 
   Tfrm_main = class(TForm)
+    btn_about: TBitBtn;
     btn_new: TBitBtn;
     btn_sync: TBitBtn;
     btn_config: TBitBtn;
     btn_exit: TBitBtn;
     btn_db: TBitBtn;
     Image1: TImage;
+    procedure btn_aboutClick(Sender: TObject);
     procedure btn_configClick(Sender: TObject);
     procedure btn_exitClick(Sender: TObject);
     procedure btn_syncClick(Sender: TObject);
@@ -26,6 +28,7 @@ type
     procedure frm_formularClick(Sender: TObject);
     procedure btn_newClick(Sender: TObject);
     procedure btn_dbClick(Sender: TObject);
+    procedure StaticText1Click(Sender: TObject);
   private
 
   public
@@ -39,7 +42,7 @@ implementation
 
 {$R *.lfm}
 
-uses frm_cedicrom_unit, sync_utils, frm_records_unit, db, frm_config_unit;
+uses frm_cedicrom_unit, sync_utils, frm_records_unit, db, frm_config_unit, frm_about;
 
 { Tfrm_main }
 
@@ -58,9 +61,14 @@ begin
  show_data_log;
 end;
 
+procedure Tfrm_main.StaticText1Click(Sender: TObject);
+begin
+
+end;
+
 procedure Tfrm_main.btn_exitClick(Sender: TObject);
 begin
-  Application.Terminate;
+   Close;
 end;
 
 procedure Tfrm_main.btn_syncClick(Sender: TObject);
@@ -76,6 +84,11 @@ end;
 procedure Tfrm_main.btn_configClick(Sender: TObject);
 begin
   frm_config.ShowModal;
+end;
+
+procedure Tfrm_main.btn_aboutClick(Sender: TObject);
+begin
+   frm_about_synchrony.ShowModal;
 end;
 
 end.
