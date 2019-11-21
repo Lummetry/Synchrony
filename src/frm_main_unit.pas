@@ -5,7 +5,8 @@ unit frm_main_unit;
 interface
 
 uses
-  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, StdCtrls, Buttons;
+  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, StdCtrls, Buttons,
+  ExtCtrls;
 
 type
 
@@ -17,6 +18,7 @@ type
     btn_config: TBitBtn;
     btn_exit: TBitBtn;
     btn_db: TBitBtn;
+    Image1: TImage;
     procedure btn_configClick(Sender: TObject);
     procedure btn_exitClick(Sender: TObject);
     procedure btn_syncClick(Sender: TObject);

@@ -1,14 +1,13 @@
 object frm_cedicrom: Tfrm_cedicrom
-  Left = 2884
+  Left = 12
   Height = 1000
-  Top = 170
+  Top = 0
   Width = 1850
   BorderStyle = bsSingle
   Caption = 'frm_cedicrom'
   ClientHeight = 1000
   ClientWidth = 1850
   Color = clHighlightText
-  DesignTimePPI = 120
   Position = poScreenCenter
   LCLVersion = '2.0.6.0'
   Scaled = False
@@ -5548,7 +5547,7 @@ object frm_cedicrom: Tfrm_cedicrom
     Left = 1016
     Height = 39
     Top = 568
-    Width = 143
+    Width = 139
     CenturyFrom = 1941
     MaxDate = 2958465
     MinDate = 36526
@@ -5610,7 +5609,7 @@ object frm_cedicrom: Tfrm_cedicrom
     Left = 1016
     Height = 39
     Top = 630
-    Width = 143
+    Width = 139
     CenturyFrom = 1941
     MaxDate = 2958465
     MinDate = 36526
@@ -5640,7 +5639,7 @@ object frm_cedicrom: Tfrm_cedicrom
     Left = 1208
     Height = 39
     Top = 600
-    Width = 225
+    Width = 221
     Caption = 'purtatoare de DIU'
     Font.CharSet = ANSI_CHARSET
     Font.Color = clBlack
@@ -5656,7 +5655,7 @@ object frm_cedicrom: Tfrm_cedicrom
     Left = 1208
     Height = 39
     Top = 641
-    Width = 119
+    Width = 115
     Caption = 'leucoree'
     Font.CharSet = ANSI_CHARSET
     Font.Color = clBlack
