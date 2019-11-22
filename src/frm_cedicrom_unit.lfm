@@ -5896,7 +5896,7 @@ object frm_cedicrom: Tfrm_cedicrom
     ParentFont = False
     TabOrder = 34
   end
-  object RadioGroup2: TRadioGroup
+  object status_hormonal: TRadioGroup
     Left = 48
     Height = 264
     Top = 704

@@ -18,7 +18,7 @@ type
     mediul1: TRadioGroup;
     mediul2: TRadioGroup;
     RadioGroup1: TRadioGroup;
-    RadioGroup2: TRadioGroup;
+    status_hormonal: TRadioGroup;
     RadioGroup3: TRadioGroup;
     RadioGroup4: TRadioGroup;
     RadioGroup5: TRadioGroup;
