@@ -14,7 +14,7 @@ type
 
   Tfrm_cedicrom = class(TForm)
     background: TImage;
-    CNP_FULL: TMaskEdit;
+    CNP1: TMaskEdit;
     mediul: TRadioGroup;
     etnia: TRadioGroup;
     histerectomie: TRadioGroup;

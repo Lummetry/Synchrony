@@ -1,7 +1,7 @@
 object frm_cedicrom: Tfrm_cedicrom
-  Left = 251
+  Left = 51
   Height = 1000
-  Top = 11
+  Top = 52
   Width = 1850
   BorderStyle = bsSingle
   Caption = 'frm_cedicrom'
@@ -5753,7 +5753,7 @@ object frm_cedicrom: Tfrm_cedicrom
     ParentFont = False
     TabOrder = 27
   end
-  object CNP_FULL: TMaskEdit
+  object CNP1: TMaskEdit
     Tag = 13
     Left = 1080
     Height = 38
