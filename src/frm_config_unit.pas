@@ -15,6 +15,7 @@ type
     BitBtn1: TBitBtn;
     BitBtn2: TBitBtn;
     BitBtn3: TBitBtn;
+    BitBtn4: TBitBtn;
     procedure BitBtn1Click(Sender: TObject);
     procedure BitBtn3Click(Sender: TObject);
   private
@@ -36,7 +37,7 @@ uses frm_debug_unit, sync_utils;
 
 procedure Tfrm_config.BitBtn1Click(Sender: TObject);
 begin
-  frm_debug.ShowModal;
+  log_show;
 end;
 
 procedure Tfrm_config.BitBtn3Click(Sender: TObject);

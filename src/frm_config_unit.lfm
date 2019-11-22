@@ -12,7 +12,7 @@ object frm_config: Tfrm_config
   object BitBtn1: TBitBtn
     Left = 150
     Height = 199
-    Top = 472
+    Top = 504
     Width = 618
     Caption = 'Afisare log'
     OnClick = BitBtn1Click
@@ -21,7 +21,7 @@ object frm_config: Tfrm_config
   object BitBtn2: TBitBtn
     Left = 150
     Height = 199
-    Top = 704
+    Top = 736
     Width = 618
     DefaultCaption = True
     Kind = bkClose
@@ -31,11 +31,20 @@ object frm_config: Tfrm_config
   object BitBtn3: TBitBtn
     Left = 150
     Height = 199
-    Top = 232
+    Top = 264
     Width = 618
     Caption = 'Fortare salvare locala'
-    Default = True
     OnClick = BitBtn3Click
     TabOrder = 2
+  end
+  object BitBtn4: TBitBtn
+    Left = 150
+    Height = 199
+    Top = 24
+    Width = 618
+    Caption = 'Verificare cititor'
+    Default = True
+    OnClick = BitBtn3Click
+    TabOrder = 3
   end
 end

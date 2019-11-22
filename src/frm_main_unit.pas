@@ -70,7 +70,8 @@ end;
 
 procedure Tfrm_main.btn_exitClick(Sender: TObject);
 begin
-   Close;
+  log_save(True);
+  Close;
 end;
 
 procedure Tfrm_main.btn_syncClick(Sender: TObject);
@@ -86,13 +87,8 @@ end;
 
 procedure Tfrm_main.FormShow(Sender: TObject);
 begin
-  if not frm_debug.Active then
-   begin
-     frm_debug.show;
-     frm_debug.Left:=Screen.Width - frm_debug.Width;
-     frm_debug.top := 0;
-   end;
-
+  if SHOW_DEBUG_ON_MAIN then
+   log_show;
 end;
 
 procedure Tfrm_main.btn_configClick(Sender: TObject);

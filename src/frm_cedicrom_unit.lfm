@@ -1,13 +1,14 @@
 object frm_cedicrom: Tfrm_cedicrom
-  Left = 258
+  Left = 9059
   Height = 1000
-  Top = 32
+  Top = 1291
   Width = 1850
   BorderStyle = bsSingle
   Caption = 'frm_cedicrom'
   ClientHeight = 1000
   ClientWidth = 1850
   Color = clHighlightText
+  DesignTimePPI = 240
   Position = poScreenCenter
   LCLVersion = '2.0.6.0'
   Scaled = False
@@ -4880,8 +4881,8 @@ object frm_cedicrom: Tfrm_cedicrom
     Left = 942
     Height = 37
     Top = 72
-    Width = 862
-    Caption = 'Formular screening pentru cancer de col uterin - Proiect CEDICROM'
+    Width = 886
+    Caption = 'Formular screening pentru cancer de col uterin - Proiect CEDICROM 2'
     Font.CharSet = ANSI_CHARSET
     Font.Color = clBlack
     Font.Height = -27
@@ -5287,7 +5288,7 @@ object frm_cedicrom: Tfrm_cedicrom
     Left = 1016
     Height = 39
     Top = 568
-    Width = 139
+    Width = 165
     CenturyFrom = 1941
     MaxDate = 2958465
     MinDate = 36526
@@ -5349,7 +5350,7 @@ object frm_cedicrom: Tfrm_cedicrom
     Left = 1016
     Height = 39
     Top = 630
-    Width = 139
+    Width = 165
     CenturyFrom = 1941
     MaxDate = 2958465
     MinDate = 36526
@@ -5377,9 +5378,9 @@ object frm_cedicrom: Tfrm_cedicrom
   object DIU: TCheckBox
     Tag = 1
     Left = 1208
-    Height = 39
+    Height = 45
     Top = 600
-    Width = 221
+    Width = 247
     Caption = 'purtatoare de DIU'
     Font.CharSet = ANSI_CHARSET
     Font.Color = clBlack
@@ -5393,9 +5394,9 @@ object frm_cedicrom: Tfrm_cedicrom
   object leucoree: TCheckBox
     Tag = 1
     Left = 1208
-    Height = 39
+    Height = 45
     Top = 641
-    Width = 115
+    Width = 141
     Caption = 'leucoree'
     Font.CharSet = ANSI_CHARSET
     Font.Color = clBlack
@@ -5634,6 +5635,7 @@ object frm_cedicrom: Tfrm_cedicrom
       'postradioterapie'
       'postchimioterapie'
     )
+    OnClick = status_postterapeuticClick
     ParentFont = False
     TabOrder = 22
   end
@@ -5760,12 +5762,12 @@ object frm_cedicrom: Tfrm_cedicrom
     ParentFont = False
     TabOrder = 27
   end
-  object CNP1: TMaskEdit
+  object CNP: TMaskEdit
     Tag = 13
     Left = 1080
     Height = 38
     Top = 257
-    Width = 540
+    Width = 180
     CharCase = ecNormal
     Font.CharSet = ANSI_CHARSET
     Font.Color = clBlack
@@ -5776,6 +5778,9 @@ object frm_cedicrom: Tfrm_cedicrom
     MaxLength = 13
     ParentFont = False
     TabOrder = 2
+    OnChange = CNPChange
+    EditMask = '0000000000000;1;_'
+    Text = '             '
     SpaceChar = '_'
   end
 end

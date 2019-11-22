@@ -6,7 +6,7 @@ interface
 
 uses
   Classes, SysUtils, Forms, Controls, Graphics, Dialogs, StdCtrls, ExtCtrls,
-  ExtDlgs, Calendar, DateTimePicker, csvdataset, db;
+  ExtDlgs, Calendar, DateTimePicker,MaskEdit, csvdataset, db;
 
 type
   TCustomField = class
@@ -17,6 +17,10 @@ type
 end;
 
 procedure init_all(frm_target : TForm);
+
+
+function idr_check: boolean;
+
 
 function form_to_list_data(frm_target : TForm): TList;
 procedure extract_and_save(frm_target : TForm);
@@ -32,7 +36,7 @@ procedure log_clear;
 procedure log_add(lst_custom_fields: TList);
 procedure log_add(str:string);
 procedure log_add_str(str: string);
-procedure log_save;
+procedure log_save(force:boolean=False);
 procedure log_show;
 procedure log_add_all_data;
 procedure log_add_data;
@@ -48,17 +52,22 @@ procedure _clear_form(frm_target: TForm);
 procedure __setup_controls(frm_target:TForm);
 
 
+
+
 var
   ds_data: TCSVDataset;
   str_log_fn : string;
   str_data_fn : string;
+  n_saves : integer;
 
 const
   cstr_data_fn = 'data.csv';
   b_save_after_add = False;
-  arr_concats : array[1..1] of string=('CNP');
+  arr_concats : array[1..1] of string=('EXAMPLE_PLACEHOLDER');
   n_max_concats = 1000;
   USE_DS_SAVE = False;
+  SAVE_EVERY = 10;
+  SHOW_DEBUG_ON_MAIN = False;
 
 
 implementation
@@ -97,6 +106,7 @@ end;
 procedure log_init;
 begin
   str_log_fn := FormatDateTime('YYYYMMDD_hhnn',Now()) + '_log.txt';
+  n_saves := 1;
 end;
 
 procedure log_clear;
@@ -115,18 +125,28 @@ begin
   log_save;
 end;
 
-procedure log_save;
+procedure log_save(force: boolean);
 begin
   try
-    frm_debug.log.Lines.SaveToFile('log/'+str_log_fn);
+    if force then
+      frm_debug.log.Lines.SaveToFile('log/'+str_log_fn)
+    else
+    if (n_saves mod SAVE_EVERY) = 0 then
+       frm_debug.log.Lines.SaveToFile('log/'+str_log_fn);
   except
 
   end;
+  n_saves := n_saves + 1;
 end;
 
 procedure log_show;
 begin
-  frm_debug.showmodal;
+  if not frm_debug.Active then
+   begin
+     frm_debug.show;
+     frm_debug.Left:=Screen.Width - frm_debug.Width;
+     frm_debug.top := 0;
+   end;
 end;
 
 procedure db_init_maybe_load_data(frm_target: TForm);
@@ -283,7 +303,7 @@ begin
       TDateTimePicker(ctrl).Date := Now;
     end
     else
-    if ctrl is TEdit then
+    if (ctrl is TEdit) or (ctrl is TMaskEdit) then
     begin
       TEdit(ctrl).text := '';
     end;
@@ -308,6 +328,15 @@ begin
   db_init_maybe_load_data(frm_target);
 end;
 
+function idr_check: boolean;
+var
+  b_res : boolean;
+begin
+  b_res := False;
+
+  result := b_res;
+end;
+
 function form_to_list_data(frm_target : TForm): TList;
 var
   i,j,p, n_ctrls, i_size, i_conc : integer;
@@ -317,6 +346,7 @@ var
   val, msg, str_nr, str_n, str_conc : string;
   n_concated : integer;
   arr_concat_vals:array[1..n_max_concats] of TCustomField;
+  b_found : boolean;
 begin
   log_add('Extracting data from ' + frm_target.name);
   n_ctrls := frm_target.ControlCount;
@@ -339,7 +369,15 @@ begin
         val := DateToStr(TDateTimePicker(ctrl).date);
       end
       else
-      if ctrl is TEdit then
+      if ctrl is TRadioGroup then
+      begin
+        if TRadioGroup(ctrl).ItemIndex <> -1 then
+          val := TRadioGroup(ctrl).Items[TRadioGroup(ctrl).ItemIndex]
+        else
+          val := '';
+      end
+      else
+      if (ctrl is TEdit) or (ctrl is TMaskEdit) then
       begin
         val := TEdit(ctrl).text;
       end
@@ -375,18 +413,23 @@ begin
     fld_conc.FieldName := str_conc;
     fld_conc.FieldSize := 0;
     log_add('Processing ' + str_conc);
+    b_found := False;
     for j := 1 to 100 do
      for p := 1 to i_conc-1 do
      begin
        fld_rec := TCustomField(arr_concat_vals[p]);
        if (fld_rec.FieldName = str_conc) and (fld_rec.FieldOrder = j) then
        begin
+         b_found := True;
          fld_conc.FieldValue := fld_conc.FieldValue + fld_rec.FieldValue;
          fld_conc.FieldSize := fld_conc.FieldSize + 1;
          log_add('Found '+ fld_conc.FieldName +' ' + fld_conc.FieldValue);
        end;
      end;
-    lst_res.Add(fld_conc)
+    if b_found then
+        lst_res.Add(fld_conc)
+    else
+        log_add('  '+str_conc+' not found in form.');
   end;
   log_add(lst_res);
   log_add('Done data extraction.');

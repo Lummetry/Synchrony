@@ -14,7 +14,7 @@ type
 
   Tfrm_cedicrom = class(TForm)
     background: TImage;
-    CNP1: TMaskEdit;
+    CNP: TMaskEdit;
     mediul: TRadioGroup;
     etnia: TRadioGroup;
     histerectomie: TRadioGroup;
@@ -63,10 +63,11 @@ type
     Title8: TLabel;
     Title9: TLabel;
     procedure contactChange(Sender: TObject);
-    procedure CNP1Change(Sender: TObject);
+    procedure CNPChange(Sender: TObject);
     procedure frm_cedicromSizeConstraintsChange(Sender: TObject);
     procedure mediulClick(Sender: TObject);
     procedure salvare_continuareClick(Sender: TObject);
+    procedure status_postterapeuticClick(Sender: TObject);
     procedure stradaChange(Sender: TObject);
     procedure Label1Click(Sender: TObject);
     procedure TitleClick(Sender: TObject);
@@ -97,9 +98,8 @@ begin
 
 end;
 
-procedure Tfrm_cedicrom.CNP1Change(Sender: TObject);
+procedure Tfrm_cedicrom.CNPChange(Sender: TObject);
 begin
-
 end;
 
 procedure Tfrm_cedicrom.frm_cedicromSizeConstraintsChange(Sender: TObject);
@@ -115,6 +115,11 @@ end;
 procedure Tfrm_cedicrom.salvare_continuareClick(Sender: TObject);
 begin
   save_and_reset(self);
+end;
+
+procedure Tfrm_cedicrom.status_postterapeuticClick(Sender: TObject);
+begin
+
 end;
 
 procedure Tfrm_cedicrom.contactChange(Sender: TObject);
