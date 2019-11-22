@@ -16,6 +16,8 @@ type
   FieldOrder: integer;
 end;
 
+procedure init_all(frm_target : TForm);
+
 function form_to_list_data(frm_target : TForm): TList;
 procedure extract_and_save(frm_target : TForm);
 
@@ -49,17 +51,19 @@ procedure __setup_controls(frm_target:TForm);
 var
   ds_data: TCSVDataset;
   str_log_fn : string;
+  str_data_fn : string;
 
 const
-  str_data_fn = 'data.csv';
+  cstr_data_fn = 'data.csv';
   b_save_after_add = False;
   arr_concats : array[1..1] of string=('CNP');
   n_max_concats = 1000;
+  USE_DS_SAVE = False;
 
 
 implementation
 
-uses frm_records_unit, frm_debug_unit, strutils;
+uses frm_records_unit, frm_debug_unit, strutils, fpcsvexport;
 
 
 function _get_str_from_name(str_name:string):string;
@@ -88,6 +92,8 @@ begin
   result := str_nr
 end;
 
+
+
 procedure log_init;
 begin
   str_log_fn := FormatDateTime('YYYYMMDD_hhnn',Now()) + '_log.txt';
@@ -112,7 +118,7 @@ end;
 procedure log_save;
 begin
   try
-    frm_debug.log.Lines.SaveToFile(str_log_fn);
+    frm_debug.log.Lines.SaveToFile('log/'+str_log_fn);
   except
 
   end;
@@ -182,12 +188,33 @@ begin
   //ds_data.First;
   log_add_str('Post-post '+s_fld+'='+ds_data.FieldByName(s_fld).asString);
   log_add('Total records so far: ' + IntToStr(ds_data.RecordCount));
+  db_save_file;
 end;
 
 procedure db_save_file;
+var
+  exporter : TCSVExporter;
+  n_rec : integer;
 begin
   log_add('Saving data file '+ str_data_fn);
-  ds_data.SaveToCSVFile(str_data_fn);
+  if FileExists(str_data_fn) and USE_DS_SAVE then
+  begin
+    log_add('Saving to existing csv');
+    ds_data.SaveToCSVFile(str_data_fn);
+    log_add('Done saving');
+  end
+  else
+  begin
+    exporter := TCSVExporter.Create(nil);
+    if ds_data.Active then
+    begin
+      log_add('Exporting CSV '+str_data_fn);
+      exporter.Dataset := ds_data;
+      exporter.FileName:=str_data_fn;
+      n_rec := exporter.Execute;
+      log_add('Exported '+intToStr(n_rec)+' records.');
+    end;
+  end;
   log_add('Done saving');
 end;
 
@@ -267,6 +294,18 @@ end;
 function bool_to_str(b:Boolean): string;
 begin
   result := IntToStr(abs(integer(b)));
+end;
+
+procedure init_all(frm_target: TForm);
+begin
+  if not DirectoryExists('log') then
+     CreateDir('log');
+  if not DirectoryExists('data') then
+     CreateDir('data');
+
+  log_init;
+  str_data_fn := 'data/' + cstr_data_fn;
+  db_init_maybe_load_data(frm_target);
 end;
 
 function form_to_list_data(frm_target : TForm): TList;
