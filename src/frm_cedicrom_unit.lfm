@@ -1,14 +1,13 @@
 object frm_cedicrom: Tfrm_cedicrom
-  Left = 9374
+  Left = 342
   Height = 1000
-  Top = 1536
+  Top = 40
   Width = 1850
   BorderStyle = bsSingle
   Caption = 'frm_cedicrom'
   ClientHeight = 1000
   ClientWidth = 1850
   Color = clHighlightText
-  DesignTimePPI = 240
   Position = poScreenCenter
   LCLVersion = '2.0.6.0'
   Scaled = False
@@ -4874,7 +4873,7 @@ object frm_cedicrom: Tfrm_cedicrom
     )
     OnClick = mediulClick
     ParentFont = False
-    TabOrder = 32
+    TabOrder = 20
   end
   object Title: TLabel
     Left = 942
@@ -4942,267 +4941,6 @@ object frm_cedicrom: Tfrm_cedicrom
     ParentColor = False
     ParentFont = False
     OnClick = TitleClick
-  end
-  object CNP1: TEdit
-    Tag = 1
-    Left = 1080
-    Height = 39
-    Top = 256
-    Width = 39
-    CharCase = ecUppercase
-    Font.CharSet = ANSI_CHARSET
-    Font.Color = clBlack
-    Font.Height = -23
-    Font.Name = 'Segoe UI Symbol'
-    Font.Pitch = fpVariable
-    Font.Quality = fqDraft
-    Font.Style = [fsBold]
-    MaxLength = 1
-    OnChange = CNP1Change
-    ParentFont = False
-    ParentShowHint = False
-    TabOrder = 2
-  end
-  object CNP2: TEdit
-    Tag = 101
-    Left = 1128
-    Height = 39
-    Top = 256
-    Width = 39
-    CharCase = ecUppercase
-    Font.CharSet = ANSI_CHARSET
-    Font.Color = clBlack
-    Font.Height = -23
-    Font.Name = 'Segoe UI Symbol'
-    Font.Pitch = fpVariable
-    Font.Quality = fqDraft
-    Font.Style = [fsBold]
-    MaxLength = 1
-    OnChange = CNP1Change
-    ParentFont = False
-    ParentShowHint = False
-    TabOrder = 3
-  end
-  object CNP4: TEdit
-    Tag = 101
-    Left = 1224
-    Height = 39
-    Top = 256
-    Width = 39
-    CharCase = ecUppercase
-    Font.CharSet = ANSI_CHARSET
-    Font.Color = clBlack
-    Font.Height = -23
-    Font.Name = 'Segoe UI Symbol'
-    Font.Pitch = fpVariable
-    Font.Quality = fqDraft
-    Font.Style = [fsBold]
-    MaxLength = 1
-    OnChange = CNP1Change
-    ParentFont = False
-    ParentShowHint = False
-    TabOrder = 5
-  end
-  object CNP3: TEdit
-    Tag = 101
-    Left = 1176
-    Height = 39
-    Top = 256
-    Width = 39
-    AutoSelect = False
-    CharCase = ecUppercase
-    Font.CharSet = ANSI_CHARSET
-    Font.Color = clBlack
-    Font.Height = -23
-    Font.Name = 'Segoe UI Symbol'
-    Font.Pitch = fpVariable
-    Font.Quality = fqDraft
-    Font.Style = [fsBold]
-    MaxLength = 1
-    OnChange = CNP1Change
-    ParentFont = False
-    ParentShowHint = False
-    TabOrder = 4
-  end
-  object CNP6: TEdit
-    Tag = 101
-    Left = 1320
-    Height = 39
-    Top = 256
-    Width = 39
-    CharCase = ecUppercase
-    Font.CharSet = ANSI_CHARSET
-    Font.Color = clBlack
-    Font.Height = -23
-    Font.Name = 'Segoe UI Symbol'
-    Font.Pitch = fpVariable
-    Font.Quality = fqDraft
-    Font.Style = [fsBold]
-    MaxLength = 1
-    OnChange = CNP1Change
-    ParentFont = False
-    ParentShowHint = False
-    TabOrder = 7
-  end
-  object CNP5: TEdit
-    Tag = 101
-    Left = 1272
-    Height = 39
-    Top = 256
-    Width = 39
-    CharCase = ecUppercase
-    Font.CharSet = ANSI_CHARSET
-    Font.Color = clBlack
-    Font.Height = -23
-    Font.Name = 'Segoe UI Symbol'
-    Font.Pitch = fpVariable
-    Font.Quality = fqDraft
-    Font.Style = [fsBold]
-    MaxLength = 1
-    OnChange = CNP1Change
-    ParentFont = False
-    ParentShowHint = False
-    TabOrder = 6
-  end
-  object CNP7: TEdit
-    Tag = 101
-    Left = 1368
-    Height = 39
-    Top = 256
-    Width = 39
-    CharCase = ecUppercase
-    Font.CharSet = ANSI_CHARSET
-    Font.Color = clBlack
-    Font.Height = -23
-    Font.Name = 'Segoe UI Symbol'
-    Font.Pitch = fpVariable
-    Font.Quality = fqDraft
-    Font.Style = [fsBold]
-    MaxLength = 1
-    OnChange = CNP1Change
-    ParentFont = False
-    ParentShowHint = False
-    TabOrder = 8
-  end
-  object CNP8: TEdit
-    Tag = 101
-    Left = 1416
-    Height = 39
-    Top = 256
-    Width = 39
-    CharCase = ecUppercase
-    Font.CharSet = ANSI_CHARSET
-    Font.Color = clBlack
-    Font.Height = -23
-    Font.Name = 'Segoe UI Symbol'
-    Font.Pitch = fpVariable
-    Font.Quality = fqDraft
-    Font.Style = [fsBold]
-    MaxLength = 1
-    OnChange = CNP1Change
-    ParentFont = False
-    ParentShowHint = False
-    TabOrder = 9
-  end
-  object CNP13: TEdit
-    Tag = 101
-    Left = 1656
-    Height = 39
-    Top = 256
-    Width = 39
-    CharCase = ecUppercase
-    Font.CharSet = ANSI_CHARSET
-    Font.Color = clBlack
-    Font.Height = -23
-    Font.Name = 'Segoe UI Symbol'
-    Font.Pitch = fpVariable
-    Font.Quality = fqDraft
-    Font.Style = [fsBold]
-    MaxLength = 1
-    OnChange = CNP1Change
-    ParentFont = False
-    ParentShowHint = False
-    TabOrder = 14
-  end
-  object CNP9: TEdit
-    Tag = 101
-    Left = 1464
-    Height = 39
-    Top = 256
-    Width = 39
-    CharCase = ecUppercase
-    Font.CharSet = ANSI_CHARSET
-    Font.Color = clBlack
-    Font.Height = -23
-    Font.Name = 'Segoe UI Symbol'
-    Font.Pitch = fpVariable
-    Font.Quality = fqDraft
-    Font.Style = [fsBold]
-    MaxLength = 1
-    OnChange = CNP1Change
-    ParentFont = False
-    ParentShowHint = False
-    TabOrder = 10
-  end
-  object CNP10: TEdit
-    Tag = 101
-    Left = 1512
-    Height = 39
-    Top = 256
-    Width = 39
-    CharCase = ecUppercase
-    Font.CharSet = ANSI_CHARSET
-    Font.Color = clBlack
-    Font.Height = -23
-    Font.Name = 'Segoe UI Symbol'
-    Font.Pitch = fpVariable
-    Font.Quality = fqDraft
-    Font.Style = [fsBold]
-    MaxLength = 1
-    OnChange = CNP1Change
-    ParentFont = False
-    ParentShowHint = False
-    TabOrder = 11
-  end
-  object CNP11: TEdit
-    Tag = 101
-    Left = 1560
-    Height = 39
-    Top = 256
-    Width = 39
-    CharCase = ecUppercase
-    Font.CharSet = ANSI_CHARSET
-    Font.Color = clBlack
-    Font.Height = -23
-    Font.Name = 'Segoe UI Symbol'
-    Font.Pitch = fpVariable
-    Font.Quality = fqDraft
-    Font.Style = [fsBold]
-    MaxLength = 1
-    OnChange = CNP1Change
-    ParentFont = False
-    ParentShowHint = False
-    TabOrder = 12
-  end
-  object CNP12: TEdit
-    Tag = 101
-    Left = 1608
-    Height = 39
-    Top = 256
-    Width = 39
-    CharCase = ecUppercase
-    Font.CharSet = ANSI_CHARSET
-    Font.Color = clBlack
-    Font.Height = -23
-    Font.Name = 'Segoe UI Symbol'
-    Font.Pitch = fpVariable
-    Font.Quality = fqDraft
-    Font.Style = [fsBold]
-    MaxLength = 1
-    OnChange = CNP1Change
-    ParentFont = False
-    ParentShowHint = False
-    TabOrder = 13
   end
   object Title3: TLabel
     Left = 1016
@@ -5315,7 +5053,7 @@ object frm_cedicrom: Tfrm_cedicrom
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
     ParentFont = False
-    TabOrder = 16
+    TabOrder = 4
   end
   object Title7: TLabel
     Left = 583
@@ -5380,7 +5118,7 @@ object frm_cedicrom: Tfrm_cedicrom
     Font.Quality = fqDraft
     OnChange = stradaChange
     ParentFont = False
-    TabOrder = 20
+    TabOrder = 8
   end
   object Title10: TLabel
     Left = 928
@@ -5412,7 +5150,7 @@ object frm_cedicrom: Tfrm_cedicrom
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
     ParentFont = False
-    TabOrder = 19
+    TabOrder = 7
   end
   object Title11: TLabel
     Left = 408
@@ -5444,7 +5182,7 @@ object frm_cedicrom: Tfrm_cedicrom
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
     ParentFont = False
-    TabOrder = 21
+    TabOrder = 13
   end
   object Title14: TLabel
     Left = 48
@@ -5509,7 +5247,7 @@ object frm_cedicrom: Tfrm_cedicrom
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
     ParentFont = False
-    TabOrder = 22
+    TabOrder = 9
   end
   object Title18: TLabel
     Left = 48
@@ -5541,14 +5279,14 @@ object frm_cedicrom: Tfrm_cedicrom
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
     ParentFont = False
-    TabOrder = 23
+    TabOrder = 10
   end
   object data_recoltare: TDateTimePicker
     Tag = 101
     Left = 1016
     Height = 39
     Top = 568
-    Width = 165
+    Width = 139
     CenturyFrom = 1941
     MaxDate = 2958465
     MinDate = 36526
@@ -5559,7 +5297,7 @@ object frm_cedicrom: Tfrm_cedicrom
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
     ParentFont = False
-    TabOrder = 24
+    TabOrder = 11
     TrailingSeparator = False
     TextForNullDate = 'NULL'
     LeadingZeros = True
@@ -5610,7 +5348,7 @@ object frm_cedicrom: Tfrm_cedicrom
     Left = 1016
     Height = 39
     Top = 630
-    Width = 165
+    Width = 139
     CenturyFrom = 1941
     MaxDate = 2958465
     MinDate = 36526
@@ -5621,7 +5359,7 @@ object frm_cedicrom: Tfrm_cedicrom
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
     ParentFont = False
-    TabOrder = 25
+    TabOrder = 12
     TrailingSeparator = False
     TextForNullDate = 'NULL'
     LeadingZeros = True
@@ -5638,9 +5376,9 @@ object frm_cedicrom: Tfrm_cedicrom
   object DIU: TCheckBox
     Tag = 101
     Left = 1208
-    Height = 45
+    Height = 39
     Top = 600
-    Width = 247
+    Width = 221
     Caption = 'purtatoare de DIU'
     Font.CharSet = ANSI_CHARSET
     Font.Color = clBlack
@@ -5649,14 +5387,14 @@ object frm_cedicrom: Tfrm_cedicrom
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
     ParentFont = False
-    TabOrder = 27
+    TabOrder = 15
   end
   object leucoree: TCheckBox
     Tag = 101
     Left = 1208
-    Height = 45
+    Height = 39
     Top = 641
-    Width = 141
+    Width = 115
     Caption = 'leucoree'
     Font.CharSet = ANSI_CHARSET
     Font.Color = clBlack
@@ -5665,7 +5403,7 @@ object frm_cedicrom: Tfrm_cedicrom
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
     ParentFont = False
-    TabOrder = 28
+    TabOrder = 16
   end
   object biopsie_descriere: TEdit
     Tag = 101
@@ -5681,7 +5419,7 @@ object frm_cedicrom: Tfrm_cedicrom
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
     ParentFont = False
-    TabOrder = 26
+    TabOrder = 14
   end
   object tel: TEdit
     Tag = 101
@@ -5697,7 +5435,7 @@ object frm_cedicrom: Tfrm_cedicrom
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
     ParentFont = False
-    TabOrder = 18
+    TabOrder = 6
   end
   object strada: TEdit
     Tag = 101
@@ -5714,7 +5452,7 @@ object frm_cedicrom: Tfrm_cedicrom
     Font.Quality = fqDraft
     OnChange = stradaChange
     ParentFont = False
-    TabOrder = 17
+    TabOrder = 5
   end
   object judet: TEdit
     Tag = 101
@@ -5730,7 +5468,7 @@ object frm_cedicrom: Tfrm_cedicrom
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
     ParentFont = False
-    TabOrder = 15
+    TabOrder = 3
   end
   object Title26: TLabel
     Left = 928
@@ -5765,7 +5503,7 @@ object frm_cedicrom: Tfrm_cedicrom
     OnClick = salvare_continuareClick
     ParentFont = False
     ParentShowHint = False
-    TabOrder = 35
+    TabOrder = 23
   end
   object salvare: TBitBtn
     Left = 1264
@@ -5782,7 +5520,7 @@ object frm_cedicrom: Tfrm_cedicrom
     Kind = bkClose
     ModalResult = 1
     ParentFont = False
-    TabOrder = 29
+    TabOrder = 17
   end
   object salvare_inchidere: TBitBtn
     Left = 1549
@@ -5800,7 +5538,7 @@ object frm_cedicrom: Tfrm_cedicrom
     Kind = bkCancel
     ModalResult = 11
     ParentFont = False
-    TabOrder = 30
+    TabOrder = 18
   end
   object mediul: TRadioGroup
     Left = 1654
@@ -5832,7 +5570,7 @@ object frm_cedicrom: Tfrm_cedicrom
     )
     OnClick = mediulClick
     ParentFont = False
-    TabOrder = 31
+    TabOrder = 19
   end
   object mediul2: TRadioGroup
     Left = 1208
@@ -5864,7 +5602,7 @@ object frm_cedicrom: Tfrm_cedicrom
     )
     OnClick = mediulClick
     ParentFont = False
-    TabOrder = 33
+    TabOrder = 21
   end
   object RadioGroup1: TRadioGroup
     Left = 720
@@ -5894,7 +5632,7 @@ object frm_cedicrom: Tfrm_cedicrom
       'postchimioterapie'
     )
     ParentFont = False
-    TabOrder = 34
+    TabOrder = 22
   end
   object status_hormonal: TRadioGroup
     Left = 48
@@ -5926,7 +5664,7 @@ object frm_cedicrom: Tfrm_cedicrom
       'alaptare'
     )
     ParentFont = False
-    TabOrder = 36
+    TabOrder = 24
   end
   object RadioGroup3: TRadioGroup
     Left = 391
@@ -5955,7 +5693,7 @@ object frm_cedicrom: Tfrm_cedicrom
       'fara leziuni vizibile'
     )
     ParentFont = False
-    TabOrder = 37
+    TabOrder = 25
   end
   object RadioGroup4: TRadioGroup
     Left = 392
@@ -5984,7 +5722,7 @@ object frm_cedicrom: Tfrm_cedicrom
       'spontane'
     )
     ParentFont = False
-    TabOrder = 38
+    TabOrder = 26
   end
   object RadioGroup5: TRadioGroup
     Left = 720
@@ -6013,6 +5751,24 @@ object frm_cedicrom: Tfrm_cedicrom
       'biopsii de col (diagnostic/descriere)'
     )
     ParentFont = False
-    TabOrder = 39
+    TabOrder = 27
+  end
+  object CNP_FULL: TMaskEdit
+    Tag = 13
+    Left = 1080
+    Height = 38
+    Top = 257
+    Width = 540
+    CharCase = ecNormal
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -21
+    Font.Name = 'Segoe UI Symbol'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    MaxLength = 13
+    ParentFont = False
+    TabOrder = 2
+    SpaceChar = '_'
   end
 end

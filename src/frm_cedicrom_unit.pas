@@ -6,7 +6,7 @@ interface
 
 uses
   Classes, SysUtils, Forms, Controls, Graphics, Dialogs, StdCtrls, ExtCtrls,
-  ExtDlgs, Calendar, Buttons, DateTimePicker;
+  ExtDlgs, Calendar, Buttons, MaskEdit, DateTimePicker;
 
 type
 
@@ -14,6 +14,7 @@ type
 
   Tfrm_cedicrom = class(TForm)
     background: TImage;
+    CNP_FULL: TMaskEdit;
     mediul: TRadioGroup;
     mediul1: TRadioGroup;
     mediul2: TRadioGroup;
@@ -27,19 +28,6 @@ type
     salvare_inchidere: TBitBtn;
     DIU: TCheckBox;
     leucoree: TCheckBox;
-    CNP1: TEdit;
-    CNP2: TEdit;
-    CNP10: TEdit;
-    CNP11: TEdit;
-    CNP12: TEdit;
-    CNP4: TEdit;
-    CNP3: TEdit;
-    CNP6: TEdit;
-    CNP5: TEdit;
-    CNP7: TEdit;
-    CNP8: TEdit;
-    CNP13: TEdit;
-    CNP9: TEdit;
     data_recoltare: TDateTimePicker;
     data_menstruatie: TDateTimePicker;
     nume: TEdit;
