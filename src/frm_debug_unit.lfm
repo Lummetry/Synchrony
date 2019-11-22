@@ -1,0 +1,49 @@
+object frm_debug: Tfrm_debug
+  Left = 9114
+  Height = 1634
+  Top = 1261
+  Width = 2011
+  Caption = 'Debuging window'
+  ClientHeight = 1634
+  ClientWidth = 2011
+  DesignTimePPI = 240
+  LCLVersion = '2.0.6.0'
+  object log: TMemo
+    Left = 0
+    Height = 1506
+    Top = 0
+    Width = 2011
+    ScrollBars = ssVertical
+    TabOrder = 0
+  end
+  object Panel1: TPanel
+    Left = 0
+    Height = 125
+    Top = 1509
+    Width = 2011
+    Align = alBottom
+    ClientHeight = 125
+    ClientWidth = 2011
+    TabOrder = 1
+    object BitBtn1: TBitBtn
+      Left = 1528
+      Height = 99
+      Top = 8
+      Width = 460
+      DefaultCaption = True
+      Kind = bkClose
+      OnClick = BitBtn1Click
+      TabOrder = 0
+    end
+    object BitBtn2: TBitBtn
+      Left = 16
+      Height = 99
+      Top = 16
+      Width = 460
+      Caption = 'Log date...'
+      Kind = bkRetry
+      OnClick = BitBtn2Click
+      TabOrder = 1
+    end
+  end
+end
