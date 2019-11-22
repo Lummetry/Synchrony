@@ -17,6 +17,7 @@ type
     BitBtn2: TBitBtn;
     log: TMemo;
     Panel1: TPanel;
+    procedure BitBtn1Click(Sender: TObject);
     procedure BitBtn2Click(Sender: TObject);
   private
 
@@ -38,6 +39,11 @@ uses sync_utils;
 procedure Tfrm_debug.BitBtn2Click(Sender: TObject);
 begin
  log_add_all_data;
+end;
+
+procedure Tfrm_debug.BitBtn1Click(Sender: TObject);
+begin
+  Close;
 end;
 
 end.

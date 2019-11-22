@@ -37,7 +37,7 @@
         <PackageName Value="LCL"/>
       </Item3>
     </RequiredPackages>
-    <Units Count="7">
+    <Units Count="8">
       <Unit0>
         <Filename Value="synchrony.pas"/>
         <IsPartOfProject Value="True"/>
@@ -52,7 +52,7 @@
       <Unit2>
         <Filename Value="frm_cedicrom_unit.pas"/>
         <IsPartOfProject Value="True"/>
-        <ComponentName Value="frm_cedricrom"/>
+        <ComponentName Value="frm_cedicrom"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
       </Unit2>
@@ -71,14 +71,23 @@
         <Filename Value="frm_records_unit.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="frm_records"/>
+        <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
       </Unit5>
       <Unit6>
         <Filename Value="frm_config_unit.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="frm_config"/>
+        <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
       </Unit6>
+      <Unit7>
+        <Filename Value="frm_about.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frm_about_synchrony"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit7>
     </Units>
   </ProjectOptions>
   <CompilerOptions>

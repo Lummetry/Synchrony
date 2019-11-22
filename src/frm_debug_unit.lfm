@@ -1,13 +1,12 @@
 object frm_debug: Tfrm_debug
-  Left = 9229
+  Left = 9114
   Height = 1634
-  Top = 1170
+  Top = 1261
   Width = 2011
   Caption = 'Debuging window'
   ClientHeight = 1634
   ClientWidth = 2011
   DesignTimePPI = 240
-  Position = poScreenCenter
   LCLVersion = '2.0.6.0'
   object log: TMemo
     Left = 0
@@ -33,7 +32,7 @@ object frm_debug: Tfrm_debug
       Width = 460
       DefaultCaption = True
       Kind = bkClose
-      ModalResult = 11
+      OnClick = BitBtn1Click
       TabOrder = 0
     end
     object BitBtn2: TBitBtn
