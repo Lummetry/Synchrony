@@ -1,7 +1,7 @@
 object frm_cedicrom: Tfrm_cedicrom
-  Left = 51
+  Left = 258
   Height = 1000
-  Top = 52
+  Top = 32
   Width = 1850
   BorderStyle = bsSingle
   Caption = 'frm_cedicrom'
@@ -4843,6 +4843,7 @@ object frm_cedicrom: Tfrm_cedicrom
     Stretch = True
   end
   object etnia: TRadioGroup
+    Tag = 10
     Left = 1565
     Height = 184
     Top = 600
@@ -5573,6 +5574,7 @@ object frm_cedicrom: Tfrm_cedicrom
     TabOrder = 19
   end
   object histerectomie: TRadioGroup
+    Tag = 10
     Left = 1208
     Height = 128
     Top = 456
@@ -5605,6 +5607,7 @@ object frm_cedicrom: Tfrm_cedicrom
     TabOrder = 21
   end
   object status_postterapeutic: TRadioGroup
+    Tag = 10
     Left = 720
     Height = 80
     Top = 704
@@ -5635,6 +5638,7 @@ object frm_cedicrom: Tfrm_cedicrom
     TabOrder = 22
   end
   object status_hormonal: TRadioGroup
+    Tag = 10
     Left = 48
     Height = 264
     Top = 704
@@ -5667,6 +5671,7 @@ object frm_cedicrom: Tfrm_cedicrom
     TabOrder = 24
   end
   object aspectul_colului: TRadioGroup
+    Tag = 10
     Left = 391
     Height = 128
     Top = 704
@@ -5696,6 +5701,7 @@ object frm_cedicrom: Tfrm_cedicrom
     TabOrder = 25
   end
   object sangerari: TRadioGroup
+    Tag = 10
     Left = 392
     Height = 128
     Top = 840
@@ -5725,6 +5731,7 @@ object frm_cedicrom: Tfrm_cedicrom
     TabOrder = 26
   end
   object in_antecedente: TRadioGroup
+    Tag = 10
     Left = 720
     Height = 128
     Top = 800
