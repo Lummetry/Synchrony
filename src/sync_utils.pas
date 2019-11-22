@@ -201,7 +201,7 @@ begin
     dsrc.DataSet := ds_data;
     frm_records.dbg.DataSource := dsrc;
   end;
-end;end;
+end;
 
 procedure __setup_controls(frm_target: TForm);
 var
