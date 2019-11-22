@@ -78,6 +78,7 @@ type
     procedure CNP1Change(Sender: TObject);
     procedure frm_cedicromSizeConstraintsChange(Sender: TObject);
     procedure mediulClick(Sender: TObject);
+    procedure salvare_continuareClick(Sender: TObject);
     procedure stradaChange(Sender: TObject);
     procedure Label1Click(Sender: TObject);
     procedure TitleClick(Sender: TObject);
@@ -95,6 +96,8 @@ implementation
 {$R *.lfm}
 
 { Tfrm_cedicrom }
+
+uses sync_utils;
 
 procedure Tfrm_cedicrom.TitleClick(Sender: TObject);
 begin
@@ -119,6 +122,11 @@ end;
 procedure Tfrm_cedicrom.mediulClick(Sender: TObject);
 begin
 
+end;
+
+procedure Tfrm_cedicrom.salvare_continuareClick(Sender: TObject);
+begin
+  save_and_reset(self);
 end;
 
 procedure Tfrm_cedicrom.contactChange(Sender: TObject);

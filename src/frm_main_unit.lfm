@@ -1,20 +1,22 @@
 object frm_main: Tfrm_main
-  Left = 634
-  Height = 444
-  Top = 247
-  Width = 664
+  Left = 9117
+  Height = 1110
+  Top = 1626
+  Width = 1660
   BorderStyle = bsNone
   Caption = 'Syncrhony command center'
-  ClientHeight = 444
-  ClientWidth = 664
+  ClientHeight = 1110
+  ClientWidth = 1660
+  DesignTimePPI = 240
   OnCreate = FormCreate
+  OnShow = FormShow
   Position = poScreenCenter
   LCLVersion = '2.0.6.0'
   object Image1: TImage
     Left = 0
-    Height = 446
+    Height = 1115
     Top = 0
-    Width = 669
+    Width = 1672
     AntialiasingMode = amOn
     Picture.Data = {
       0A544A706567496D616765B6310200FFD8FFE10ABD4578696600004D4D002A00
@@ -4516,14 +4518,14 @@ object frm_main: Tfrm_main
     Stretch = True
   end
   object btn_new: TBitBtn
-    Left = 112
-    Height = 80
-    Top = 128
-    Width = 202
+    Left = 280
+    Height = 200
+    Top = 320
+    Width = 505
     Caption = 'Inregistrare noua'
     Font.CharSet = ANSI_CHARSET
     Font.Color = 6763281
-    Font.Height = -21
+    Font.Height = -53
     Font.Name = 'Segoe UI'
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
@@ -4532,38 +4534,37 @@ object frm_main: Tfrm_main
     TabOrder = 0
   end
   object btn_sync: TBitBtn
-    Left = 346
-    Height = 80
-    Top = 128
-    Width = 202
+    Left = 865
+    Height = 200
+    Top = 320
+    Width = 505
     Caption = 'Sincronizare date'
     Font.Color = 6763281
-    Font.Height = -21
-    OnClick = btn_syncClick
+    Font.Height = -53
     ParentFont = False
     TabOrder = 1
   end
   object btn_config: TBitBtn
-    Left = 346
-    Height = 80
-    Top = 232
-    Width = 202
+    Left = 865
+    Height = 200
+    Top = 580
+    Width = 505
     Caption = 'Configurare'
     Font.Color = 6763281
-    Font.Height = -21
+    Font.Height = -53
     OnClick = btn_configClick
     ParentFont = False
     TabOrder = 3
   end
   object btn_exit: TBitBtn
-    Left = 346
-    Height = 80
-    Top = 336
-    Width = 202
+    Left = 865
+    Height = 200
+    Top = 840
+    Width = 505
     Caption = 'Iesire'
     Font.CharSet = ANSI_CHARSET
     Font.Color = 6763281
-    Font.Height = -21
+    Font.Height = -53
     Font.Name = 'Segoe UI'
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
@@ -4572,26 +4573,26 @@ object frm_main: Tfrm_main
     TabOrder = 5
   end
   object btn_db: TBitBtn
-    Left = 112
-    Height = 80
-    Top = 232
-    Width = 202
+    Left = 280
+    Height = 200
+    Top = 580
+    Width = 505
     Caption = 'Inregistrari locale'
     Font.Color = 6763281
-    Font.Height = -21
+    Font.Height = -53
     OnClick = btn_dbClick
     ParentFont = False
     TabOrder = 2
   end
   object btn_about: TBitBtn
-    Left = 112
-    Height = 80
-    Top = 336
-    Width = 202
+    Left = 280
+    Height = 200
+    Top = 840
+    Width = 505
     Caption = 'Despre'
     Font.CharSet = ANSI_CHARSET
     Font.Color = clBlack
-    Font.Height = -21
+    Font.Height = -53
     Font.Name = 'Segoe UI'
     Font.Pitch = fpVariable
     Font.Quality = fqDraft

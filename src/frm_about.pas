@@ -22,6 +22,7 @@ type
     copyright: TStaticText;
     procedure FormCreate(Sender: TObject);
     procedure StaticText2Click(Sender: TObject);
+    procedure AboutClick(Sender: TObject);
   private
 
   public
@@ -45,6 +46,11 @@ end;
 procedure Tfrm_about_synchrony.StaticText2Click(Sender: TObject);
 begin
 
+end;
+
+procedure Tfrm_about_synchrony.AboutClick(Sender: TObject);
+begin
+  Close;
 end;
 
 end.

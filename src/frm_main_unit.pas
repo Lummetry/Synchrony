@@ -25,6 +25,7 @@ type
     procedure btn_exitClick(Sender: TObject);
     procedure btn_syncClick(Sender: TObject);
     procedure FormCreate(Sender: TObject);
+    procedure FormShow(Sender: TObject);
     procedure frm_formularClick(Sender: TObject);
     procedure btn_newClick(Sender: TObject);
     procedure btn_dbClick(Sender: TObject);
@@ -42,7 +43,8 @@ implementation
 
 {$R *.lfm}
 
-uses frm_cedicrom_unit, sync_utils, frm_records_unit, db, frm_config_unit, frm_about;
+uses frm_cedicrom_unit, sync_utils, frm_records_unit, db, frm_config_unit,
+     frm_about, frm_debug_unit;
 
 { Tfrm_main }
 
@@ -52,7 +54,7 @@ end;
 
 procedure Tfrm_main.btn_newClick(Sender: TObject);
 begin
-  new_registration(frm_cedicrom, True);
+  new_registration(frm_cedicrom, False);
 end;
 
 procedure Tfrm_main.btn_dbClick(Sender: TObject);
@@ -78,6 +80,18 @@ end;
 
 procedure Tfrm_main.FormCreate(Sender: TObject);
 begin
+  if frm_debug = nil then
+   frm_debug := Tfrm_debug.Create(Application);
+end;
+
+procedure Tfrm_main.FormShow(Sender: TObject);
+begin
+  if not frm_debug.Active then
+   begin
+     frm_debug.show;
+     frm_debug.Left:=Screen.Width - frm_debug.Width;
+     frm_debug.top := 0;
+   end;
 
 end;
 

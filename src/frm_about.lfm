@@ -1,20 +1,22 @@
 object frm_about_synchrony: Tfrm_about_synchrony
-  Left = 654
-  Height = 329
-  Top = 288
-  Width = 519
+  Left = 9777
+  Height = 822
+  Top = 1551
+  Width = 1298
   BorderStyle = bsToolWindow
   Caption = 'About'
-  ClientHeight = 329
-  ClientWidth = 519
+  ClientHeight = 822
+  ClientWidth = 1298
+  DesignTimePPI = 240
   OnCreate = FormCreate
   LCLVersion = '2.0.6.0'
   object bg_about: TImage
     Left = 0
-    Height = 329
+    Height = 822
     Top = 0
-    Width = 522
+    Width = 1305
     AntialiasingMode = amOn
+    OnClick = AboutClick
     Picture.Data = {
       0A544A706567496D61676592190100FFD8FFE1077C4578696600004D4D002A00
       000008000C0100000300000001020A0000010100030000000101490000010200
@@ -2274,57 +2276,60 @@ object frm_about_synchrony: Tfrm_about_synchrony
     Stretch = True
   end
   object StaticText1: TStaticText
-    Left = 160
-    Height = 44
+    Left = 400
+    Height = 110
     Top = 0
-    Width = 196
+    Width = 490
     Caption = 'Syncrony.mobile '
     Font.CharSet = ANSI_CHARSET
     Font.Color = 6763281
-    Font.Height = -27
+    Font.Height = -68
     Font.Name = 'Segoe UI Symbol'
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
+    OnClick = AboutClick
     ParentFont = False
     TabOrder = 0
   end
   object StaticText2: TStaticText
-    Left = 40
-    Height = 32
-    Top = 40
-    Width = 448
+    Left = 100
+    Height = 80
+    Top = 100
+    Width = 1120
     Alignment = taCenter
     Caption = 'Synchrony.mobile pentru Institutul Oncologic Cluj-Napoca (IOCN).'
     Font.CharSet = ANSI_CHARSET
     Font.Color = 6763281
-    Font.Height = -15
+    Font.Height = -38
     Font.Name = 'Segoe UI Symbol'
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
-    OnClick = StaticText2Click
+    OnClick = AboutClick
     ParentFont = False
     TabOrder = 1
   end
   object StaticText3: TStaticText
-    Left = 16
-    Height = 80
-    Top = 240
-    Width = 285
+    Left = 40
+    Height = 200
+    Top = 600
+    Width = 712
     Caption = 'Powered by: 4E Software'#13#10'Developed by: Constantinescu Dan Mihai'#13#10#13#10'Contact: office@4esoft.ro'
     Font.CharSet = ANSI_CHARSET
     Font.Color = 6763281
-    Font.Height = -15
+    Font.Height = -38
     Font.Name = 'Segoe UI Symbol'
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
+    OnClick = AboutClick
     ParentFont = False
     TabOrder = 2
   end
   object Image1: TImage
-    Left = 352
-    Height = 120
-    Top = 88
-    Width = 120
+    Left = 880
+    Height = 300
+    Top = 220
+    Width = 300
+    OnClick = AboutClick
     Picture.Data = {
       1754506F727461626C654E6574776F726B4772617068696385E7000089504E47
       0D0A1A0A0000000D49484452000001E4000001E60806000000A266FDF2000000
@@ -4184,10 +4189,11 @@ object frm_about_synchrony: Tfrm_about_synchrony
     Stretch = True
   end
   object Image2: TImage
-    Left = 200
-    Height = 120
-    Top = 88
-    Width = 120
+    Left = 500
+    Height = 300
+    Top = 220
+    Width = 300
+    OnClick = AboutClick
     Picture.Data = {
       1754506F727461626C654E6574776F726B477261706869634B8F050089504E47
       0D0A1A0A0000000D49484452000001E4000001E60806000000A266FDF2000000
@@ -15581,10 +15587,11 @@ object frm_about_synchrony: Tfrm_about_synchrony
     Stretch = True
   end
   object Image3: TImage
-    Left = 48
-    Height = 120
-    Top = 88
-    Width = 120
+    Left = 120
+    Height = 300
+    Top = 220
+    Width = 300
+    OnClick = AboutClick
     Picture.Data = {
       1754506F727461626C654E6574776F726B4772617068696359FC020089504E47
       0D0A1A0A0000000D49484452000001E4000001E60806000000A266FDF2000000
@@ -21706,12 +21713,13 @@ object frm_about_synchrony: Tfrm_about_synchrony
     Stretch = True
   end
   object copyright: TStaticText
-    Left = 407
-    Height = 15
-    Top = 312
-    Width = 112
+    Left = 1018
+    Height = 38
+    Top = 780
+    Width = 280
     Caption = '© 4E Software S.R.L.'
     Font.Color = 6763281
+    OnClick = AboutClick
     ParentFont = False
     TabOrder = 3
   end

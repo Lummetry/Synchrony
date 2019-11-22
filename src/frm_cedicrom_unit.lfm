@@ -1,13 +1,14 @@
 object frm_cedicrom: Tfrm_cedicrom
-  Left = 12
+  Left = 9374
   Height = 1000
-  Top = 0
+  Top = 1536
   Width = 1850
   BorderStyle = bsSingle
   Caption = 'frm_cedicrom'
   ClientHeight = 1000
   ClientWidth = 1850
   Color = clHighlightText
+  DesignTimePPI = 240
   Position = poScreenCenter
   LCLVersion = '2.0.6.0'
   Scaled = False
@@ -4943,7 +4944,7 @@ object frm_cedicrom: Tfrm_cedicrom
     OnClick = TitleClick
   end
   object CNP1: TEdit
-    Tag = 101
+    Tag = 1
     Left = 1080
     Height = 39
     Top = 256
@@ -5237,7 +5238,7 @@ object frm_cedicrom: Tfrm_cedicrom
     OnClick = TitleClick
   end
   object nume: TEdit
-    Tag = 101
+    Tag = 50
     Left = 192
     Height = 39
     Top = 256
@@ -5269,7 +5270,7 @@ object frm_cedicrom: Tfrm_cedicrom
     OnClick = TitleClick
   end
   object prenume: TEdit
-    Tag = 101
+    Tag = 50
     Left = 695
     Height = 39
     Top = 256
@@ -5547,7 +5548,7 @@ object frm_cedicrom: Tfrm_cedicrom
     Left = 1016
     Height = 39
     Top = 568
-    Width = 139
+    Width = 165
     CenturyFrom = 1941
     MaxDate = 2958465
     MinDate = 36526
@@ -5609,7 +5610,7 @@ object frm_cedicrom: Tfrm_cedicrom
     Left = 1016
     Height = 39
     Top = 630
-    Width = 139
+    Width = 165
     CenturyFrom = 1941
     MaxDate = 2958465
     MinDate = 36526
@@ -5637,9 +5638,9 @@ object frm_cedicrom: Tfrm_cedicrom
   object DIU: TCheckBox
     Tag = 101
     Left = 1208
-    Height = 39
+    Height = 45
     Top = 600
-    Width = 221
+    Width = 247
     Caption = 'purtatoare de DIU'
     Font.CharSet = ANSI_CHARSET
     Font.Color = clBlack
@@ -5653,9 +5654,9 @@ object frm_cedicrom: Tfrm_cedicrom
   object leucoree: TCheckBox
     Tag = 101
     Left = 1208
-    Height = 39
+    Height = 45
     Top = 641
-    Width = 115
+    Width = 141
     Caption = 'leucoree'
     Font.CharSet = ANSI_CHARSET
     Font.Color = clBlack
@@ -5748,12 +5749,11 @@ object frm_cedicrom: Tfrm_cedicrom
     OnClick = TitleClick
   end
   object salvare_continuare: TBitBtn
-    Tag = 101
     Left = 1264
     Height = 65
     Top = 817
     Width = 552
-    Caption = '&Salvare si continuare'
+    Caption = '&Salvare si formular nou'
     Default = True
     Font.CharSet = ANSI_CHARSET
     Font.Color = clBlack
@@ -5762,18 +5762,17 @@ object frm_cedicrom: Tfrm_cedicrom
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
     GlyphShowMode = gsmAlways
-    ModalResult = 6
+    OnClick = salvare_continuareClick
     ParentFont = False
     ParentShowHint = False
     TabOrder = 35
   end
   object salvare: TBitBtn
-    Tag = 101
     Left = 1264
     Height = 65
     Top = 903
     Width = 267
-    Caption = '&Salvare'
+    Caption = '&Salvare si iesire'
     Font.CharSet = ANSI_CHARSET
     Font.Color = clBlack
     Font.Height = -25
@@ -5786,13 +5785,12 @@ object frm_cedicrom: Tfrm_cedicrom
     TabOrder = 29
   end
   object salvare_inchidere: TBitBtn
-    Tag = 101
     Left = 1549
     Height = 65
     Top = 903
     Width = 267
     Cancel = True
-    Caption = 'salvare si iesire'
+    Caption = 'Iesire fara salvare'
     Font.CharSet = ANSI_CHARSET
     Font.Color = clBlack
     Font.Height = -25
