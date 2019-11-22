@@ -19,8 +19,7 @@ begin
   Application.Initialize;
   Application.CreateForm(Tfrm_main, frm_main);
   Application.CreateForm(Tfrm_cedicrom, frm_cedicrom);
-  log_init;
-  db_init_maybe_load_data(frm_cedicrom);
+  init_all(frm_cedicrom);
   Application.CreateForm(Tfrm_records, frm_records);
   Application.CreateForm(Tfrm_config, frm_config);
   Application.CreateForm(Tfrm_about_synchrony, frm_about_synchrony);
