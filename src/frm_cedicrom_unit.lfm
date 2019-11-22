@@ -1,7 +1,7 @@
 object frm_cedicrom: Tfrm_cedicrom
-  Left = 342
+  Left = 251
   Height = 1000
-  Top = 40
+  Top = 11
   Width = 1850
   BorderStyle = bsSingle
   Caption = 'frm_cedicrom'
@@ -4842,7 +4842,7 @@ object frm_cedicrom: Tfrm_cedicrom
     }
     Stretch = True
   end
-  object mediul1: TRadioGroup
+  object etnia: TRadioGroup
     Left = 1565
     Height = 184
     Top = 600
@@ -5040,7 +5040,7 @@ object frm_cedicrom: Tfrm_cedicrom
     OnClick = TitleClick
   end
   object localitate: TEdit
-    Tag = 101
+    Tag = 20
     Left = 695
     Height = 39
     Top = 312
@@ -5104,7 +5104,7 @@ object frm_cedicrom: Tfrm_cedicrom
     OnClick = TitleClick
   end
   object cabinet: TEdit
-    Tag = 101
+    Tag = 50
     Left = 1101
     Height = 39
     Top = 392
@@ -5137,7 +5137,7 @@ object frm_cedicrom: Tfrm_cedicrom
     OnClick = TitleClick
   end
   object medic_familie: TEdit
-    Tag = 101
+    Tag = 50
     Left = 608
     Height = 39
     Top = 392
@@ -5168,8 +5168,8 @@ object frm_cedicrom: Tfrm_cedicrom
     ParentFont = False
     OnClick = TitleClick
   end
-  object etnie: TEdit
-    Tag = 101
+  object alta_etnie: TEdit
+    Tag = 20
     Left = 1648
     Height = 31
     Top = 744
@@ -5234,7 +5234,7 @@ object frm_cedicrom: Tfrm_cedicrom
     OnClick = TitleClick
   end
   object centru: TEdit
-    Tag = 101
+    Tag = 50
     Left = 240
     Height = 39
     Top = 572
@@ -5266,7 +5266,7 @@ object frm_cedicrom: Tfrm_cedicrom
     OnClick = TitleClick
   end
   object medic: TEdit
-    Tag = 101
+    Tag = 50
     Left = 224
     Height = 39
     Top = 632
@@ -5282,7 +5282,7 @@ object frm_cedicrom: Tfrm_cedicrom
     TabOrder = 10
   end
   object data_recoltare: TDateTimePicker
-    Tag = 101
+    Tag = 10
     Left = 1016
     Height = 39
     Top = 568
@@ -5344,7 +5344,7 @@ object frm_cedicrom: Tfrm_cedicrom
     OnClick = TitleClick
   end
   object data_menstruatie: TDateTimePicker
-    Tag = 101
+    Tag = 10
     Left = 1016
     Height = 39
     Top = 630
@@ -5374,7 +5374,7 @@ object frm_cedicrom: Tfrm_cedicrom
     MonthNames = 'Long'
   end
   object DIU: TCheckBox
-    Tag = 101
+    Tag = 1
     Left = 1208
     Height = 39
     Top = 600
@@ -5390,7 +5390,7 @@ object frm_cedicrom: Tfrm_cedicrom
     TabOrder = 15
   end
   object leucoree: TCheckBox
-    Tag = 101
+    Tag = 1
     Left = 1208
     Height = 39
     Top = 641
@@ -5406,7 +5406,7 @@ object frm_cedicrom: Tfrm_cedicrom
     TabOrder = 16
   end
   object biopsie_descriere: TEdit
-    Tag = 101
+    Tag = 50
     Left = 720
     Height = 39
     Top = 929
@@ -5422,7 +5422,7 @@ object frm_cedicrom: Tfrm_cedicrom
     TabOrder = 14
   end
   object tel: TEdit
-    Tag = 101
+    Tag = 20
     Left = 96
     Height = 39
     Top = 392
@@ -5438,7 +5438,7 @@ object frm_cedicrom: Tfrm_cedicrom
     TabOrder = 6
   end
   object strada: TEdit
-    Tag = 101
+    Tag = 50
     Left = 1160
     Height = 39
     Top = 312
@@ -5455,7 +5455,7 @@ object frm_cedicrom: Tfrm_cedicrom
     TabOrder = 5
   end
   object judet: TEdit
-    Tag = 101
+    Tag = 20
     Left = 272
     Height = 39
     Top = 312
@@ -5572,7 +5572,7 @@ object frm_cedicrom: Tfrm_cedicrom
     ParentFont = False
     TabOrder = 19
   end
-  object mediul2: TRadioGroup
+  object histerectomie: TRadioGroup
     Left = 1208
     Height = 128
     Top = 456
@@ -5604,7 +5604,7 @@ object frm_cedicrom: Tfrm_cedicrom
     ParentFont = False
     TabOrder = 21
   end
-  object RadioGroup1: TRadioGroup
+  object status_postterapeutic: TRadioGroup
     Left = 720
     Height = 80
     Top = 704
@@ -5666,7 +5666,7 @@ object frm_cedicrom: Tfrm_cedicrom
     ParentFont = False
     TabOrder = 24
   end
-  object RadioGroup3: TRadioGroup
+  object aspectul_colului: TRadioGroup
     Left = 391
     Height = 128
     Top = 704
@@ -5695,7 +5695,7 @@ object frm_cedicrom: Tfrm_cedicrom
     ParentFont = False
     TabOrder = 25
   end
-  object RadioGroup4: TRadioGroup
+  object sangerari: TRadioGroup
     Left = 392
     Height = 128
     Top = 840
@@ -5724,7 +5724,7 @@ object frm_cedicrom: Tfrm_cedicrom
     ParentFont = False
     TabOrder = 26
   end
-  object RadioGroup5: TRadioGroup
+  object in_antecedente: TRadioGroup
     Left = 720
     Height = 128
     Top = 800

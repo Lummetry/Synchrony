@@ -16,13 +16,13 @@ type
     background: TImage;
     CNP_FULL: TMaskEdit;
     mediul: TRadioGroup;
-    mediul1: TRadioGroup;
-    mediul2: TRadioGroup;
-    RadioGroup1: TRadioGroup;
+    etnia: TRadioGroup;
+    histerectomie: TRadioGroup;
+    status_postterapeutic: TRadioGroup;
     status_hormonal: TRadioGroup;
-    RadioGroup3: TRadioGroup;
-    RadioGroup4: TRadioGroup;
-    RadioGroup5: TRadioGroup;
+    aspectul_colului: TRadioGroup;
+    sangerari: TRadioGroup;
+    in_antecedente: TRadioGroup;
     salvare_continuare: TBitBtn;
     salvare: TBitBtn;
     salvare_inchidere: TBitBtn;
@@ -41,7 +41,7 @@ type
     tel: TEdit;
     cabinet: TEdit;
     medic_familie: TEdit;
-    etnie: TEdit;
+    alta_etnie: TEdit;
     Label1: TLabel;
     Title: TLabel;
     Title1: TLabel;
