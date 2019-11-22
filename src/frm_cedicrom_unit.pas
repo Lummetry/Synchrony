@@ -6,7 +6,7 @@ interface
 
 uses
   Classes, SysUtils, Forms, Controls, Graphics, Dialogs, StdCtrls, ExtCtrls,
-  ExtDlgs, Calendar, Buttons, DateTimePicker;
+  ExtDlgs, Calendar, Buttons, MaskEdit, DateTimePicker;
 
 type
 
@@ -14,32 +14,20 @@ type
 
   Tfrm_cedicrom = class(TForm)
     background: TImage;
+    CNP1: TMaskEdit;
     mediul: TRadioGroup;
-    mediul1: TRadioGroup;
-    mediul2: TRadioGroup;
-    RadioGroup1: TRadioGroup;
+    etnia: TRadioGroup;
+    histerectomie: TRadioGroup;
+    status_postterapeutic: TRadioGroup;
     status_hormonal: TRadioGroup;
-    RadioGroup3: TRadioGroup;
-    RadioGroup4: TRadioGroup;
-    RadioGroup5: TRadioGroup;
+    aspectul_colului: TRadioGroup;
+    sangerari: TRadioGroup;
+    in_antecedente: TRadioGroup;
     salvare_continuare: TBitBtn;
     salvare: TBitBtn;
     salvare_inchidere: TBitBtn;
     DIU: TCheckBox;
     leucoree: TCheckBox;
-    CNP1: TEdit;
-    CNP2: TEdit;
-    CNP10: TEdit;
-    CNP11: TEdit;
-    CNP12: TEdit;
-    CNP4: TEdit;
-    CNP3: TEdit;
-    CNP6: TEdit;
-    CNP5: TEdit;
-    CNP7: TEdit;
-    CNP8: TEdit;
-    CNP13: TEdit;
-    CNP9: TEdit;
     data_recoltare: TDateTimePicker;
     data_menstruatie: TDateTimePicker;
     nume: TEdit;
@@ -53,7 +41,7 @@ type
     tel: TEdit;
     cabinet: TEdit;
     medic_familie: TEdit;
-    etnie: TEdit;
+    alta_etnie: TEdit;
     Label1: TLabel;
     Title: TLabel;
     Title1: TLabel;
