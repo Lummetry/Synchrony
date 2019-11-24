@@ -16,8 +16,11 @@ type
     BitBtn2: TBitBtn;
     BitBtn3: TBitBtn;
     BitBtn4: TBitBtn;
+    BitBtn5: TBitBtn;
     procedure BitBtn1Click(Sender: TObject);
     procedure BitBtn3Click(Sender: TObject);
+    procedure BitBtn4Click(Sender: TObject);
+    procedure BitBtn5Click(Sender: TObject);
   private
 
   public
@@ -41,8 +44,20 @@ begin
 end;
 
 procedure Tfrm_config.BitBtn3Click(Sender: TObject);
+var
+  rec :TROID;
 begin
-  db_save_file;
+ rec := idr_get_last_record;
+end;
+
+procedure Tfrm_config.BitBtn4Click(Sender: TObject);
+begin
+  idr_execute_app;
+end;
+
+procedure Tfrm_config.BitBtn5Click(Sender: TObject);
+begin
+  idr_stop_app;
 end;
 
 end.

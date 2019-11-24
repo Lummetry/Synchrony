@@ -6,7 +6,7 @@ interface
 
 uses
   Classes, SysUtils, Forms, Controls, Graphics, Dialogs, StdCtrls, ExtCtrls,
-  ExtDlgs, Calendar, Buttons, MaskEdit, DateTimePicker;
+  ExtDlgs, Calendar, Buttons, MaskEdit, FileCtrl, DateTimePicker;
 
 type
 
@@ -14,10 +14,13 @@ type
 
   Tfrm_cedicrom = class(TForm)
     background: TImage;
+    BitBtn1: TBitBtn;
     CNP: TMaskEdit;
+    judet: TComboBox;
     mediul: TRadioGroup;
     etnia: TRadioGroup;
     histerectomie: TRadioGroup;
+    pnl_info: TPanel;
     status_postterapeutic: TRadioGroup;
     status_hormonal: TRadioGroup;
     aspectul_colului: TRadioGroup;
@@ -35,7 +38,6 @@ type
     medic: TEdit;
     biopsie_descriere: TEdit;
     prenume: TEdit;
-    judet: TEdit;
     localitate: TEdit;
     strada: TEdit;
     tel: TEdit;
@@ -62,6 +64,7 @@ type
     Title7: TLabel;
     Title8: TLabel;
     Title9: TLabel;
+    procedure BitBtn1Click(Sender: TObject);
     procedure contactChange(Sender: TObject);
     procedure CNPChange(Sender: TObject);
     procedure frm_cedicromSizeConstraintsChange(Sender: TObject);
@@ -125,6 +128,11 @@ end;
 procedure Tfrm_cedicrom.contactChange(Sender: TObject);
 begin
 
+end;
+
+procedure Tfrm_cedicrom.BitBtn1Click(Sender: TObject);
+begin
+  idr_autocomplete(self);
 end;
 
 procedure Tfrm_cedicrom.stradaChange(Sender: TObject);

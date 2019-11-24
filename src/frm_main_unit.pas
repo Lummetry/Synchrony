@@ -20,6 +20,7 @@ type
     btn_exit: TBitBtn;
     btn_db: TBitBtn;
     Image1: TImage;
+    sdir: TSelectDirectoryDialog;
     procedure btn_aboutClick(Sender: TObject);
     procedure btn_configClick(Sender: TObject);
     procedure btn_exitClick(Sender: TObject);
@@ -44,7 +45,7 @@ implementation
 {$R *.lfm}
 
 uses frm_cedicrom_unit, sync_utils, frm_records_unit, db, frm_config_unit,
-     frm_about, frm_debug_unit;
+     frm_about, frm_debug_unit, fileutil;
 
 { Tfrm_main }
 
@@ -70,13 +71,23 @@ end;
 
 procedure Tfrm_main.btn_exitClick(Sender: TObject);
 begin
-  log_save(True);
-  Close;
+ idr_stop_app;;
+ log_save(True);
+ Close;
 end;
 
 procedure Tfrm_main.btn_syncClick(Sender: TObject);
+var
+  path : string;
 begin
+ log_add('Exporting/Sync-ing...');
+ if sdir.Execute then
+ begin
+  path := sdir.FileName;
+  log_add('DST: '+path);
+  db_copy_data(path);
 
+ end;
 end;
 
 procedure Tfrm_main.FormCreate(Sender: TObject);
