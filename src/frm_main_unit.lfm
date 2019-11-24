@@ -4541,6 +4541,7 @@ object frm_main: Tfrm_main
     Caption = 'Sincronizare date'
     Font.Color = 6763281
     Font.Height = -53
+    OnClick = btn_syncClick
     ParentFont = False
     TabOrder = 1
   end
@@ -4577,7 +4578,7 @@ object frm_main: Tfrm_main
     Height = 200
     Top = 580
     Width = 505
-    Caption = 'Inregistrari locale'
+    Caption = 'Raportare'
     Font.Color = 6763281
     Font.Height = -53
     OnClick = btn_dbClick
@@ -4599,5 +4600,9 @@ object frm_main: Tfrm_main
     OnClick = btn_aboutClick
     ParentFont = False
     TabOrder = 4
+  end
+  object sdir: TSelectDirectoryDialog
+    left = 1464
+    top = 392
   end
 end

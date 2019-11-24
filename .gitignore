@@ -10,6 +10,7 @@
 src/backup/
 
 src/lib/x86_64-win64/
-deploy
 
-*.exe
+deploy/log/
+
+deploy/synchrony.exe
