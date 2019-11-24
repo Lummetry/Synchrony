@@ -14,8 +14,10 @@ type
 
   Tfrm_records = class(TForm)
     BitBtn1: TBitBtn;
+    BitBtn2: TBitBtn;
     dbg: TDBGrid;
     Panel1: TPanel;
+    procedure BitBtn2Click(Sender: TObject);
   private
 
   public
@@ -28,6 +30,15 @@ var
 implementation
 
 {$R *.lfm}
+
+{ Tfrm_records }
+
+uses sync_utils;
+
+procedure Tfrm_records.BitBtn2Click(Sender: TObject);
+begin
+ db_save_file;
+end;
 
 end.
 
