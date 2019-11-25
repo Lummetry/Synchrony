@@ -3,6 +3,7 @@ object frm_config: Tfrm_config
   Height = 352
   Top = 346
   Width = 289
+  BorderStyle = bsToolWindow
   Caption = 'Configurare'
   ClientHeight = 352
   ClientWidth = 289
@@ -13,6 +14,7 @@ object frm_config: Tfrm_config
     Height = 352
     Top = 0
     Width = 289
+    AntialiasingMode = amOn
     Picture.Data = {
       0A544A706567496D616765A0C70000FFD8FFE107CD4578696600004D4D002A00
       0000080007011200030000000100010000011A00050000000100000062011B00
