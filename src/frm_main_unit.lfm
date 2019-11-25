@@ -1,7 +1,7 @@
 object frm_main: Tfrm_main
-  Left = 607
+  Left = 625
   Height = 424
-  Top = 277
+  Top = 278
   Width = 664
   BorderStyle = bsNone
   Caption = 'Syncrhony command center'

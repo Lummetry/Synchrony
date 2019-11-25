@@ -1613,6 +1613,7 @@ object frm_config: Tfrm_config
       135F966EC165FB4605D8DFE40F7F5E35B97D2691E68CE5E750200E04315F1085
       8C35B1B6B1DB5C63D197FEEC7FFFD9
     }
+    Stretch = True
   end
   object BitBtn1: TBitBtn
     Left = 26
