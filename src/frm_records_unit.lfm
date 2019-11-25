@@ -1,9 +1,9 @@
 object frm_records: Tfrm_records
-  Left = 8976
+  Left = 2303
   Height = 424
-  Top = 1195
+  Top = 332
   Width = 924
-  Caption = 'frm_records'
+  Caption = 'Raportare'
   ClientHeight = 424
   ClientWidth = 924
   Position = poScreenCenter

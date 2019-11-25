@@ -1,7 +1,7 @@
 object frm_about_synchrony: Tfrm_about_synchrony
-  Left = 9777
+  Left = 1071
   Height = 329
-  Top = 1551
+  Top = 431
   Width = 519
   BorderStyle = bsToolWindow
   Caption = 'About'

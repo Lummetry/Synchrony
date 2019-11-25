@@ -18,6 +18,7 @@ type
     BitBtn4: TBitBtn;
     BitBtn5: TBitBtn;
     BG_config: TImage;
+    BitBtn6: TBitBtn;
     procedure BitBtn1Click(Sender: TObject);
     procedure BitBtn3Click(Sender: TObject);
     procedure BitBtn4Click(Sender: TObject);
