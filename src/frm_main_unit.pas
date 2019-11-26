@@ -45,7 +45,7 @@ implementation
 {$R *.lfm}
 
 uses frm_cedicrom_unit, sync_utils, frm_records_unit, db, frm_config_unit,
-     frm_about, frm_debug_unit, fileutil;
+     frm_about, frm_debug_unit, fileutil, frm_wait_unit;
 
 { Tfrm_main }
 
@@ -71,8 +71,13 @@ end;
 
 procedure Tfrm_main.btn_exitClick(Sender: TObject);
 begin
+ frm_wait.inf.caption := 'Va rugam asteptati.'#13#10'Se comunica cu cititorul de carduri...';
+ frm_wait.show;
+ Application.ProcessMessages;
+ Application.ProcessMessages;
  idr_stop_app;;
  log_save(True);
+ frm_wait.close;
  Close;
 end;
 

@@ -1,19 +1,20 @@
 object frm_config: Tfrm_config
-  Left = 779
-  Height = 352
-  Top = 346
-  Width = 289
+  Left = 10596
+  Height = 880
+  Top = 1191
+  Width = 730
   BorderStyle = bsToolWindow
   Caption = 'Diverse'
-  ClientHeight = 352
-  ClientWidth = 289
+  ClientHeight = 880
+  ClientWidth = 730
+  DesignTimePPI = 240
   Position = poScreenCenter
   LCLVersion = '2.0.6.0'
   object BG_config: TImage
     Left = 0
-    Height = 352
+    Height = 880
     Top = 0
-    Width = 289
+    Width = 722
     AntialiasingMode = amOn
     Picture.Data = {
       0A544A706567496D616765A0C70000FFD8FFE107CD4578696600004D4D002A00
@@ -1618,69 +1619,36 @@ object frm_config: Tfrm_config
     Stretch = True
   end
   object BitBtn1: TBitBtn
-    Left = 26
-    Height = 33
-    Top = 72
-    Width = 247
+    Left = 65
+    Height = 82
+    Top = 180
+    Width = 618
     Caption = 'Afisare log'
-    Font.Height = -20
+    Font.Height = -50
     OnClick = BitBtn1Click
     ParentFont = False
     TabOrder = 0
   end
   object BitBtn2: TBitBtn
-    Left = 26
-    Height = 38
-    Top = 301
-    Width = 247
+    Left = 65
+    Height = 95
+    Top = 752
+    Width = 618
     Default = True
     DefaultCaption = True
-    Font.Height = -20
+    Font.Height = -50
     Kind = bkClose
     ModalResult = 11
     ParentFont = False
     TabOrder = 1
   end
-  object BitBtn3: TBitBtn
-    Left = 26
-    Height = 32
-    Top = 216
-    Width = 247
-    Caption = 'Verificare cache cititor'
-    Font.Height = -20
-    OnClick = BitBtn3Click
-    ParentFont = False
-    TabOrder = 2
-  end
-  object BitBtn4: TBitBtn
-    Left = 26
-    Height = 35
-    Top = 120
-    Width = 247
-    Caption = 'Verificare cititor / start'
-    Font.Height = -20
-    OnClick = BitBtn4Click
-    ParentFont = False
-    TabOrder = 3
-  end
-  object BitBtn5: TBitBtn
-    Left = 26
-    Height = 35
-    Top = 168
-    Width = 247
-    Caption = 'Verificare cititor / stop'
-    Font.Height = -20
-    OnClick = BitBtn5Click
-    ParentFont = False
-    TabOrder = 4
-  end
   object BitBtn6: TBitBtn
-    Left = 26
-    Height = 35
-    Top = 24
-    Width = 246
+    Left = 65
+    Height = 88
+    Top = 60
+    Width = 615
     Caption = 'Ajutor'
-    Font.Height = -20
+    Font.Height = -50
     Glyph.Data = {
       76060000424D7606000000000000360000002800000014000000140000000100
       2000000000004006000064000000640000000000000000000000000000000000
@@ -1735,7 +1703,54 @@ object frm_config: Tfrm_config
       0000000000450000008F000000BE000000DD000000D9000000C2000000940000
       0047000000000000000000000000000000000000000000000000
     }
+    OnClick = BitBtn6Click
     ParentFont = False
-    TabOrder = 5
+    TabOrder = 2
+  end
+  object GroupBox1: TGroupBox
+    Left = 48
+    Height = 264
+    Top = 456
+    Width = 654
+    Caption = 'Administrare avansata'
+    ClientHeight = 218
+    ClientWidth = 650
+    TabOrder = 3
+    object BitBtn4: TBitBtn
+      Left = 16
+      Height = 60
+      Top = 8
+      Width = 618
+      Caption = 'Verificare cititor / start'
+      Font.Height = -30
+      Font.Name = 'Courier New'
+      OnClick = BitBtn4Click
+      ParentFont = False
+      TabOrder = 0
+    end
+    object BitBtn5: TBitBtn
+      Left = 16
+      Height = 60
+      Top = 72
+      Width = 618
+      Caption = 'Verificare cititor / stop'
+      Font.Height = -30
+      Font.Name = 'Courier New'
+      OnClick = BitBtn5Click
+      ParentFont = False
+      TabOrder = 1
+    end
+    object BitBtn3: TBitBtn
+      Left = 16
+      Height = 60
+      Top = 136
+      Width = 618
+      Caption = 'Verificare cache cititor'
+      Font.Height = -30
+      Font.Name = 'Courier New'
+      OnClick = BitBtn3Click
+      ParentFont = False
+      TabOrder = 2
+    end
   end
 end

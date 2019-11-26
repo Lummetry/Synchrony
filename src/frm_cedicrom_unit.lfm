@@ -1,13 +1,14 @@
 object frm_cedicrom: Tfrm_cedicrom
-  Left = 1942
+  Left = 8482
   Height = 1000
-  Top = 0
+  Top = 1234
   Width = 1850
   BorderStyle = bsSingle
   Caption = 'Formular'
   ClientHeight = 1000
   ClientWidth = 1850
   Color = clHighlightText
+  DesignTimePPI = 240
   OnShow = FormShow
   Position = poScreenCenter
   LCLVersion = '2.0.6.0'
@@ -5715,9 +5716,9 @@ object frm_cedicrom: Tfrm_cedicrom
   object DIU: TCheckBox
     Tag = 1
     Left = 1208
-    Height = 39
+    Height = 45
     Top = 600
-    Width = 221
+    Width = 247
     Caption = 'purtatoare de DIU'
     Font.CharSet = ANSI_CHARSET
     Font.Color = clBlack
@@ -5731,9 +5732,9 @@ object frm_cedicrom: Tfrm_cedicrom
   object leucoree: TCheckBox
     Tag = 1
     Left = 1208
-    Height = 39
+    Height = 45
     Top = 641
-    Width = 115
+    Width = 141
     Caption = 'leucoree'
     Font.CharSet = ANSI_CHARSET
     Font.Color = clBlack

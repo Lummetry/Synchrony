@@ -18,6 +18,14 @@ end;
 
 
 type
+  TTwoDates=class
+    d_start : TDateTime;
+    d_end : TDateTime;
+    s_start : string;
+    s_end : string;
+  end;
+
+type
 
   { TROID }
 
@@ -73,6 +81,7 @@ procedure db_add_data(lst_data: TList);
 procedure db_save_file;
 procedure db_prepare_data_grid;
 procedure db_copy_data(str_dest:string);
+function db_get_min_max_dates:TTwoDates;
 
 
 procedure log_init;
@@ -653,6 +662,45 @@ begin
    log_add(' Failed!');
 end;
 
+function db_get_min_max_dates: TTwoDates;
+var
+  d, d_min, d_max : TDateTime;
+  s_min, s_max,s_d : string;
+  res : TTwoDates;
+  fmt : TFormatSettings;
+begin
+  ds_data.First;
+  d_min := Now;
+  fmt.DateSeparator:='-';
+  fmt.TimeSeparator:=':';
+  fmt.LongDateFormat:='YYYY-MM-DD';
+  fmt.LongTimeFormat:='hh:nn:ss';
+  fmt.ShortDateFormat:='YYYY-MM-DD';
+  d_max := StrToDateTime('1999-01-01 00:00:00', fmt);
+  while not ds_data.EOF do
+  begin
+    s_d := ds_data.FieldByName(c_fld_date).AsString;
+    d := StrToDateTime(s_d, fmt);
+    if CompareDateTime(d_min, d) > 0 then
+    begin
+     d_min := d;
+     s_min := s_d;
+    end;
+    if CompareDateTime(d_max, d) < 0 then
+    begin
+     d_max := d;
+     s_max := s_d;
+    end;
+    ds_data.Next;
+  end;
+  res := TTwoDates.Create;
+  res.d_end:= d_max;
+  res.d_start:=d_min;
+  res.s_end := s_max;
+  res.s_start := s_min;
+  result := res;
+end;
+
 procedure __setup_controls(frm_target: TForm);
 var
   i, n_ctrls : integer;
@@ -774,6 +822,8 @@ begin
   idr_stop_app;
   idr_execute_app;
 end;
+
+
 
 
 
