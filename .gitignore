@@ -14,3 +14,7 @@ src/lib/x86_64-win64/
 deploy/log/
 
 deploy/synchrony.exe
+
+deploy/data/data.csv
+
+deploy/api/SwipeCmdPrompt.logtemp.txt
