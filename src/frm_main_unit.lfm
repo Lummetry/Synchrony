@@ -1,22 +1,21 @@
 object frm_main: Tfrm_main
-  Left = 8370
-  Height = 1060
-  Top = 1445
-  Width = 1660
+  Left = 635
+  Height = 424
+  Top = 308
+  Width = 664
   BorderStyle = bsNone
   Caption = 'Syncrhony command center'
-  ClientHeight = 1060
-  ClientWidth = 1660
-  DesignTimePPI = 240
+  ClientHeight = 424
+  ClientWidth = 664
   OnCreate = FormCreate
   OnShow = FormShow
   Position = poScreenCenter
   LCLVersion = '2.0.6.0'
   object Image1: TImage
     Left = 0
-    Height = 1115
+    Height = 446
     Top = 0
-    Width = 1672
+    Width = 669
     AntialiasingMode = amOn
     Picture.Data = {
       0A544A706567496D616765B6310200FFD8FFE10ABD4578696600004D4D002A00
@@ -4518,13 +4517,13 @@ object frm_main: Tfrm_main
     Stretch = True
   end
   object btn_new: TBitBtn
-    Left = 280
-    Height = 200
-    Top = 320
-    Width = 505
+    Left = 112
+    Height = 80
+    Top = 128
+    Width = 202
     Font.CharSet = ANSI_CHARSET
     Font.Color = 6763281
-    Font.Height = -53
+    Font.Height = -21
     Font.Name = 'Segoe UI'
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
@@ -6557,38 +6556,38 @@ object frm_main: Tfrm_main
     TabOrder = 0
   end
   object btn_sync: TBitBtn
-    Left = 865
-    Height = 200
-    Top = 320
-    Width = 505
+    Left = 346
+    Height = 80
+    Top = 128
+    Width = 202
     Caption = 'Export'
     Font.Color = 6763281
-    Font.Height = -53
+    Font.Height = -21
     OnClick = btn_syncClick
     ParentFont = False
     TabOrder = 1
   end
   object btn_config: TBitBtn
-    Left = 865
-    Height = 200
-    Top = 580
-    Width = 505
+    Left = 346
+    Height = 80
+    Top = 232
+    Width = 202
     Caption = 'Diverse'
     Font.Color = 6763281
-    Font.Height = -53
+    Font.Height = -21
     OnClick = btn_configClick
     ParentFont = False
     TabOrder = 3
   end
   object btn_exit: TBitBtn
-    Left = 865
-    Height = 200
-    Top = 840
-    Width = 505
+    Left = 346
+    Height = 80
+    Top = 336
+    Width = 202
     Caption = 'Iesire'
     Font.CharSet = ANSI_CHARSET
     Font.Color = 6763281
-    Font.Height = -53
+    Font.Height = -21
     Font.Name = 'Segoe UI'
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
@@ -6597,26 +6596,26 @@ object frm_main: Tfrm_main
     TabOrder = 5
   end
   object btn_db: TBitBtn
-    Left = 280
-    Height = 200
-    Top = 580
-    Width = 505
+    Left = 112
+    Height = 80
+    Top = 232
+    Width = 202
     Caption = 'Istoric'
     Font.Color = 6763281
-    Font.Height = -53
+    Font.Height = -21
     OnClick = btn_dbClick
     ParentFont = False
     TabOrder = 2
   end
   object btn_about: TBitBtn
-    Left = 280
-    Height = 200
-    Top = 840
-    Width = 505
+    Left = 112
+    Height = 80
+    Top = 336
+    Width = 202
     Caption = 'Despre'
     Font.CharSet = ANSI_CHARSET
     Font.Color = 6763281
-    Font.Height = -53
+    Font.Height = -21
     Font.Name = 'Segoe UI'
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
@@ -6625,7 +6624,7 @@ object frm_main: Tfrm_main
     TabOrder = 4
   end
   object sdir: TSelectDirectoryDialog
-    left = 1465
-    top = 393
+    left = 586
+    top = 157
   end
 end
