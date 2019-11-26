@@ -70,7 +70,8 @@ var
   r: integer;
 begin
   log_add('Exec tutorial');
-  r := ShellExecute(0, nil, PChar('"tutorial/Tutorial.wmv"'),nil, nil,SW_SHOWNORMAL);
+  r := ShellExecute(0, 'open', 'tutorial\Tutorial.wmv',nil, nil,SW_MAXIMIZE);
+
   log_add('  Tutorial exec '+IntToStr(r));
 end;
 

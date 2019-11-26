@@ -106,6 +106,8 @@ function code_to_judet(str_code:string):string;
 
 procedure __setup_controls(frm_target:TForm);
 
+procedure _msg_win(str_str:string);
+
 
 
 var
@@ -201,7 +203,7 @@ const
 implementation
 
 uses frm_records_unit, frm_debug_unit, strutils, fpcsvexport, ShellApi, Windows,
-  JwaWindows, jwatlhelp32, fileutil, dateutils;
+  JwaWindows, jwatlhelp32, fileutil, dateutils, frm_wait_unit;
 
 
 
@@ -726,6 +728,14 @@ begin
       TEdit(ctrl).tag := 101;
     end;
   end;
+end;
+
+procedure _msg_win(str_str: string);
+begin
+ frm_wait.inf.caption := str_str;
+ frm_wait.show;
+ Application.ProcessMessages;
+ Application.ProcessMessages;
 end;
 
 
