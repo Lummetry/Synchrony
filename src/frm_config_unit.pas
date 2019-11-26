@@ -5,7 +5,8 @@ unit frm_config_unit;
 interface
 
 uses
-  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, Buttons, ExtCtrls;
+  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, Buttons, ExtCtrls,
+  StdCtrls;
 
 type
 
@@ -16,13 +17,15 @@ type
     BitBtn2: TBitBtn;
     BitBtn3: TBitBtn;
     BitBtn4: TBitBtn;
-    BitBtn5: TBitBtn;
     BG_config: TImage;
+    BitBtn5: TBitBtn;
     BitBtn6: TBitBtn;
+    GroupBox1: TGroupBox;
     procedure BitBtn1Click(Sender: TObject);
     procedure BitBtn3Click(Sender: TObject);
     procedure BitBtn4Click(Sender: TObject);
     procedure BitBtn5Click(Sender: TObject);
+    procedure BitBtn6Click(Sender: TObject);
   private
 
   public
@@ -34,7 +37,7 @@ var
 
 implementation
 
-uses frm_debug_unit, sync_utils;
+uses frm_debug_unit, sync_utils, ShellApi, Windows;
 
 {$R *.lfm}
 
@@ -60,6 +63,15 @@ end;
 procedure Tfrm_config.BitBtn5Click(Sender: TObject);
 begin
   idr_stop_app;
+end;
+
+procedure Tfrm_config.BitBtn6Click(Sender: TObject);
+var
+  r: integer;
+begin
+  log_add('Exec tutorial');
+  r := ShellExecute(0, nil, PChar('"tutorial/Tutorial - fara sunet.mp4"'),nil, nil,SW_SHOWNORMAL);
+  log_add('  Tutorial exec '+IntToStr(r));
 end;
 
 end.

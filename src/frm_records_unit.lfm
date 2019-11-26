@@ -1,56 +1,146 @@
 object frm_records: Tfrm_records
-  Left = 2303
-  Height = 424
-  Top = 332
-  Width = 924
-  Caption = 'Raportare'
-  ClientHeight = 424
-  ClientWidth = 924
+  Left = 8609
+  Height = 1000
+  Top = 1503
+  Width = 1850
+  Caption = 'Vizualizare formulare'
+  ClientHeight = 1000
+  ClientWidth = 1850
+  DesignTimePPI = 240
+  OnShow = FormShow
   Position = poScreenCenter
   LCLVersion = '2.0.6.0'
   object Panel1: TPanel
     Left = 0
-    Height = 44
-    Top = 380
-    Width = 924
+    Height = 267
+    Top = 733
+    Width = 1850
     Align = alBottom
     BevelInner = bvLowered
-    ClientHeight = 44
-    ClientWidth = 924
+    ClientHeight = 267
+    ClientWidth = 1850
     ParentFont = False
     TabOrder = 0
     object BitBtn1: TBitBtn
-      Left = 717
-      Height = 30
-      Top = 6
-      Width = 200
-      DefaultCaption = True
+      Left = 15
+      Height = 75
+      Top = 184
+      Width = 500
+      Caption = '&Inchide'
       Kind = bkClose
       ModalResult = 11
       ParentFont = False
       TabOrder = 0
     end
     object BitBtn2: TBitBtn
-      Left = 6
-      Height = 30
-      Top = 6
-      Width = 200
+      Left = 16
+      Height = 75
+      Top = 16
+      Width = 500
       Caption = 'Salveaza'
       Kind = bkRetry
       OnClick = BitBtn2Click
       ParentFont = False
       TabOrder = 1
     end
+    object Label1: TLabel
+      Left = 544
+      Height = 72
+      Top = 192
+      Width = 1280
+      AutoSize = False
+      Caption = 'Sugestie: puteti selecta inregistrarea si campul dorit si edita informatia direct. Nu uitati sa salvati ulterior si ulterior sa syncronizati/exportati'
+      Font.Color = clNavy
+      Font.Height = -27
+      Font.Name = 'Arial'
+      Font.Style = [fsItalic]
+      ParentColor = False
+      ParentFont = False
+      WordWrap = True
+    end
+    object GroupBox1: TGroupBox
+      Left = 530
+      Height = 169
+      Top = 15
+      Width = 1310
+      Caption = 'Statistici'
+      ClientHeight = 123
+      ClientWidth = 1306
+      TabOrder = 2
+      object nrec: TLabeledEdit
+        Left = 32
+        Height = 46
+        Top = 48
+        Width = 176
+        Color = clForm
+        EditLabel.Height = 35
+        EditLabel.Width = 176
+        EditLabel.Caption = 'Numar form'
+        EditLabel.ParentColor = False
+        EditLabel.ParentFont = False
+        EditLabel.Font.Height = -30
+        EditLabel.Font.Name = 'Arial'
+        Font.Height = -33
+        Font.Name = 'Arial'
+        ParentFont = False
+        ReadOnly = True
+        TabOrder = 0
+      end
+      object dstart: TLabeledEdit
+        Left = 288
+        Height = 46
+        Top = 48
+        Width = 384
+        Color = clForm
+        EditLabel.Height = 35
+        EditLabel.Width = 384
+        EditLabel.Caption = 'Primul form'
+        EditLabel.ParentColor = False
+        EditLabel.ParentFont = False
+        EditLabel.Font.Height = -30
+        EditLabel.Font.Name = 'Arial'
+        Font.Height = -33
+        Font.Name = 'Arial'
+        ParentFont = False
+        ReadOnly = True
+        TabOrder = 1
+        Text = 'YYYY-DD-MM HH:NN:SS'
+      end
+      object dend: TLabeledEdit
+        Left = 688
+        Height = 46
+        Top = 48
+        Width = 376
+        Color = clForm
+        EditLabel.Height = 35
+        EditLabel.Width = 376
+        EditLabel.Caption = 'Ultimul form'
+        EditLabel.ParentColor = False
+        EditLabel.ParentFont = False
+        EditLabel.Font.Height = -30
+        EditLabel.Font.Name = 'Arial'
+        Font.Height = -33
+        Font.Name = 'Arial'
+        ParentFont = False
+        ReadOnly = True
+        TabOrder = 2
+        Text = 'YYYY-DD-MM HH:NN:SS'
+      end
+    end
   end
   object dbg: TDBGrid
     Left = 0
-    Height = 380
+    Height = 733
     Top = 0
-    Width = 924
+    Width = 1850
     Align = alClient
     Color = clWindow
     Columns = <>
+    Font.Height = -27
+    Font.Name = 'Arial'
     ParentFont = False
     TabOrder = 1
+    TitleFont.Height = -27
+    TitleFont.Name = 'Arial'
   end
 end
