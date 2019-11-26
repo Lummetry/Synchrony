@@ -5,7 +5,7 @@ unit frm_config_unit;
 interface
 
 uses
-  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, Buttons;
+  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, Buttons, ExtCtrls;
 
 type
 
@@ -17,6 +17,8 @@ type
     BitBtn3: TBitBtn;
     BitBtn4: TBitBtn;
     BitBtn5: TBitBtn;
+    BG_config: TImage;
+    BitBtn6: TBitBtn;
     procedure BitBtn1Click(Sender: TObject);
     procedure BitBtn3Click(Sender: TObject);
     procedure BitBtn4Click(Sender: TObject);

@@ -67,6 +67,7 @@ type
     procedure BitBtn1Click(Sender: TObject);
     procedure contactChange(Sender: TObject);
     procedure CNPChange(Sender: TObject);
+    procedure FormShow(Sender: TObject);
     procedure frm_cedicromSizeConstraintsChange(Sender: TObject);
     procedure mediulClick(Sender: TObject);
     procedure salvare_continuareClick(Sender: TObject);
@@ -103,6 +104,11 @@ end;
 
 procedure Tfrm_cedicrom.CNPChange(Sender: TObject);
 begin
+end;
+
+procedure Tfrm_cedicrom.FormShow(Sender: TObject);
+begin
+  self.Top:=0;
 end;
 
 procedure Tfrm_cedicrom.frm_cedicromSizeConstraintsChange(Sender: TObject);
