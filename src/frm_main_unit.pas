@@ -71,10 +71,7 @@ end;
 
 procedure Tfrm_main.btn_exitClick(Sender: TObject);
 begin
- frm_wait.inf.caption := 'Va rugam asteptati.'#13#10'Se comunica cu cititorul de carduri...';
- frm_wait.show;
- Application.ProcessMessages;
- Application.ProcessMessages;
+ _msg_win('Va rugam asteptati.'#13#10'Se comunica cu cititorul de carduri...');
  idr_stop_app;;
  log_save(True);
  frm_wait.close;

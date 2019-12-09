@@ -19,11 +19,13 @@ begin
   Application.Initialize;
   Application.CreateForm(Tfrm_main, frm_main);
   Application.CreateForm(Tfrm_cedicrom, frm_cedicrom);
+  Application.CreateForm(Tfrm_wait, frm_wait);
+  _msg_win('Se porneste aplicatia...');
   init_all(frm_cedicrom);
+  frm_wait.Close;
   Application.CreateForm(Tfrm_records, frm_records);
   Application.CreateForm(Tfrm_config, frm_config);
   Application.CreateForm(Tfrm_about_synchrony, frm_about_synchrony);
-  Application.CreateForm(Tfrm_wait, frm_wait);
   Application.Run;
 end.
 
